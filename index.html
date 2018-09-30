@@ -1,217 +1,224 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="reset.css">
   <title>Coworking</title>
 </head>
 
 <body>
-  <div class="header">
-    <header>
-      <div class="logo">
-        <a href="#" class="logo__link">
-          <img src="logo-fig.png" alt="" class="logo__pic">
-        </a>
-      </div>
-      <div class="contacts">
-        <a href="+78000039210" class="contacts__phone">8 (800) 00-392-10</a>
-        </a>
-      
-        <div class="contacts__shedule">График работы</div>
+  <div class="page">
+    <header class="header">
+      <div class="container-1">
+        <div class="logo">
+          <!--<a href="#" class="logo__link">-->
+          <img src="/images/logo-fig.png" alt="logotype" class="logo__pic">
+          <!--</a>-->
+        </div>
+        <div class="contacts">
+          <div class="contacts__phone"><a href="tel:+78000039210" class="contacts__phone-link">8 (800) 00-392-10</a>
+            </a>
+          </div>
+          <div class="contacts__shedule"><button type="button">График работы</button></div>
+        </div>
+      </div> 
+      <div class="banner">
+        <img src="/images/pic.jpg" alt="banner">
       </div>
     </header>
-    <div class="banner">
-      <img src="/images/pic.jpg" alt="">
-    </div>
-  </div>
-  
-  <div class="container">
-    <aside>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              <div class="menu__icon"></div>
-              <div class="menu__text">ГЛАВНАЯ</div>
-            </a> 
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              <div class="menu__icon"></div>
-              <div class="menu__text">ОТЗЫВЫ</div>
-            </a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">
-              <div class="menu__icon"></div>
-              <div class="menu__text">ТАРИФЫ</div>
-            </a>  
-          </li>
-        </ul>
-      </nav>
-
-    </aside>
-    <div class="feauteres">
-      <h1>Особенности</h1>
-      
-      <div class="feateres__item">
-        <div><img  class="feateres__pics" src="" alt="">
-        </div>
-        <div class="featers__title">уникальность</div>
-        <h3 class="featers__text">Создан для вашего комфортного отдыха
-        </h3>
-        <div> 
-          <ul >
-            <li class="featers__text-detail">Кофе/чай</li>  
-            <li class="featers__text-detail">Шкаф (5 кг)</li>
-            <li class="featers__text-detail">Рабочее место</li>
+    
+    
+    
+    <div class="container">
+      <aside class="sidebar">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">ГЛАВНАЯ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link__feedback">ОТЗЫВЫ</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link menu__link__tarif">ТАРИФЫ</a>
+            </li>
           </ul>
-        </div>
-      </div> 
-      <div class="feateres__item">
-            <div><img  class="feateres__pics" src="" alt="">
+        </nav>
+
+      </aside>
+      <div class="container__block">
+        <main class="feauteres">
+          <h1>Особенности</h1>
+
+          <section class="feateres__item">
+            <div class="feateres__icon"><img class="feateres__pics" src="/images/flower.png" alt="flower">
             </div>
-            <div class="featers__title">премиум-класс</div>
-            <h3 class="featers__text">Для любителей 
-                хороших впечатлений
+            <h2 class="featers__title">уникальность</h2>
+            <h3 class="featers__text">Создан для вашего комфортного отдыха
             </h3>
-            <div> 
-              <ul >
-                <li class="featers__text-detail">Обед+кофе</li>  
-                <li class="featers__text-detail">Шкаф (10 кг)</li>
-                <li class="featers__text-detail">Детское кресло</li>
+            <div class="featers__list">
+              <ul class="featers__list-full">
+                <li class="featers__list-detail">Кофе/чай</li>
+                <li class="featers__list-detail">Шкаф (5 кг)</li>
+                <li class="featers__list-detail">Рабочее место</li>
               </ul>
             </div>
-      </div>   
-      <div class="feateres__item">
-              <div><img  class="feateres__pics" src="" alt="">
-              </div>
-              <div class="featers__title">лакшери-стулья</div>
-              <h3 class="featers__text">Всё самое лучшее 
-                  и незабываемое 
-              </h3>
-              <div> 
-                <ul >
-                  <li class="featers__text-detail">Джакузи</li>  
-                  <li class="featers__text-detail">Шкаф (15 кг)</li>
-                  <li class="featers__text-detail">Табуретка</li>
-                </ul>
-              </div>
-      </div>   
+          </section>
+          <section class="feateres__item">
+            <div class="feateres__icon"><img class="feateres__pics" src="/images/mark-as-favorite-star.png" alt="star">
+            </div>
+            <h2 class="featers__title">премиум-класс</h2>
+            <h3 class="featers__text">Для любителей хороших впечатлений</h3>
+            <div class="featers__list">
+              <ul class="featers__list-full">
+                <li class="featers__list-detail">Обед+кофе</li>
+                <li class="featers__list-detail">Шкаф (10 кг)</li>
+                <li class="featers__list-detail">Детское кресло</li>
+              </ul>
+            </div>
+          </section>
+          <section class="feateres__item">
+            <div><img class="feateres__pics" src="/images/painter-palette.png" alt="">
+            </div>
+            <h2 class="featers__title">лакшери-стулья</h2>
+            <h3 class="featers__text">Всё самое лучшее и незабываемое</h3>
+            <div class="featers__list">
+              <ul class="featers__list-full">
+                <li class="featers__list-detail">Джакузи</li>
+                <li class="featers__list-detail">Шкаф (15 кг)</li>
+                <li class="featers__list-detail">Табуретка</li>
+              </ul>
+            </div>
+          </section>
 
-    </div>
-    <div class="news">
-      <h1>Последние новости</h1>
-      <div class="news__item">
-        <div><img  class="feeds__pics" src="/images/Layer_6.jpg" alt="">
-        </div>
-        <div>
-        <div>12.10.2016</div>
-        <h3>Чёрная дыра скидок!</h3>
-        <p>Ключевым технологическим партнером GrowUp является дата-центр Миран, расположенный всего лишь в 500 метрах от здания, а значит, скорость интернета будет стабильной в любое время суток. Коворкинг работает в формате 24/7.
-            Используйте шкаф для хранения личных вещей. </p>
-        </div>
-      </div>   
-      <div class="news__item">
-        <div><img  class="feeds__pics" src="/images/Layer_7.jpg" alt="">
-        </div>
-        <div>
-          <div>01.02.2016</div>
-          <h3>Заражай друзей, получай призы!</h3>
-          <p>Быть частью сообщества сильных, грамотных и увлеченных своим делом профессионалов - вдохновляет выходить на новые уровни развития. Регулярно в коворкинге проводятся лекции, мастер-классы, встречи с инвесторами или менторами для резидентов.</p>
-        </div>
-      </div>  
-      <div class="news__item">
-          <div><img class="feeds__pics" src="/images/Layer_9.jpg" alt="">
+        </main>
+        <main class="news">
+          <h1>Последние новости</h1>
+          <section class="news__item">
+            <div class="news__item-img"><img class="news__item-pics" src="/images/Layer_6.jpg" alt="picture_1">
+            </div>
+            <div class="news__item-content">
+              <div class="news__item-data">12.10.2016</div>
+              <h3>Чёрная дыра скидок!</h3>
+              <p>Ключевым технологическим партнером GrowUp является дата-центр Миран, расположенный всего лишь в 500
+                метрах
+                от здания, а значит, скорость интернета будет стабильной в любое время суток. Коворкинг работает в
+                формате
+                24/7.
+                Используйте шкаф для хранения личных вещей. </p>
+            </div>
+          </section>
+          <section class="news__item">
+            <div class="news__item-img"><img class="news__item-pics" src="/images/Layer_7.jpg" alt="picture_2">
+            </div>
+            <div class="news__item-content">
+              <div class="news__item-data">01.02.2016</div>
+              <h3>Заражай друзей, получай призы!</h3>
+              <p>Быть частью сообщества сильных, грамотных и увлеченных своим делом профессионалов - вдохновляет
+                выходить
+                на новые уровни развития. Регулярно в коворкинге проводятся лекции, мастер-классы, встречи с
+                инвесторами
+                или менторами для резидентов.</p>
+            </div>
+          </section>
+          <section class="news__item">
+            <div class="news__item-img"><img class="news__item-pics" src="/images/Layer_9.jpg" alt="picture_3">
+            </div>
+            <div class="news__item-content">
+              <div class="news__item-data">22.12.2015</div>
+              <h3>Новое рабочее место для бизнесменов.</h3>
+              <p>Для резидентов коворкинга оборудована не только рабочая зона, но и зона отдыха. Она включает в себя:
+                кухонную зону и зону релакса.
+                Каждый резидент может беспрепятственно пользоваться кухонным оборудованием: микроволновкой, чайником,
+                кофе
+                машиной, посудой.</p>
+            </div>
+          </section>
+          <div class="news__pagination">
+            <div class="news__pagination-text">Страница 1 из 7</div>
+            <div class="news__pagination-elem">
+              <a href="#" class="news__pagination-prev-next">
+              </a>
+              <ul class="news__pagination-pages">
+                <li class="news__pagination-item">
+                  <a href="#" class="news__pagination-link">1</a>
+                </li>
+                <li class="news_pagination-item">
+                  <a href="#" class="news__pagination-link">2</a>
+                </li>
+                <li class="news_pagination-item">
+                  <a href="#" class="news__pagination-link">3</a>
+                </li>
+                <li class="news_pagination-item">
+                  <a href="#" class="news__pagination-link">4</a>
+                </li>
+                <li class="news_pagination-item">
+                  <a href="#" class="news__pagination-link">5</a>
+                </li>
+                <li class="news_pagination-item">
+                  <a href="#" class="news__pagination-link">6</a>
+                </li>
+                <li class="news_pagination-item">
+                  <a href="#" class="news__pagination-link">7</a>
+                </li>
+              </ul>
+              <a href="" class="news__pagination-prev-next"> > </a>
+            </div>
+
           </div>
-          <div>
-            <div>22.12.2015</div>
-            <h3>Новое рабочее место для бизнесменов.</h3>
-            <p>Для резидентов коворкинга оборудована не только рабочая зона, но и зона отдыха. Она включает в себя: кухонную зону и зону релакса.
-            Каждый резидент может беспрепятственно пользоваться кухонным оборудованием: микроволновкой, чайником, кофе машиной, посудой.</p>
-          </div>
-      </div> 
-      <div class="news__pagination">
-        <div class="news__pagination-text">Страница 1 из 7</div>
-        <div class="news__pagination-elem">
-          <a href="#" class="news__pagination-prev-next"> < </a>
-          <ul class="news__pagination-pages">
-            <li class="news__pagination-item">
-              <a href="#" class="news__pagination-link">1</a>  
-            </li>
-            <li class="news_pagination-item">
-              <a href="#" class="news__pagination-link">2</a>
-            </li>
-            <li class="news_pagination-item">
-              <a href="#" class="news__pagination-link">3</a>
-            </li>
-            <li class="news_pagination-item">
-              <a href="#" class="news__pagination-link">4</a>  
-            </li>
-            <li class="news_pagination-item">
-              <a href="#" class="news__pagination-link">5</a>
-            </li>
-            <li class="news_pagination-item">
-              <a href="#" class="news__pagination-link">6</a>
-            </li>
-            <li class="news_pagination-item">
-              <a href="#" class="news__pagination-link">7</a>
-            </li>
-          </ul>
-          <a href="" class="news__pagination-prev-next"> > </a>
-        </div>
-
-      </div> 
-    </div>
-
-  </div>
-  <footer>
-    <address>Сделано с любовью и старанием
-        на курсе «HTML + CSS» в 
-      <a href="https://loftschool.com/">LoftSchool.</a> 
-        Автор работы:<b>Егер Ольга</b> 
-    </address>
-    <div class="logo">
-      <a href="#" class="logo__link">
-        <img src="logo-fig.png" alt="" class="logo__pic">
-      </a>
-    </div>
-    <div class="networks">
-      <h3>Наши социальные сети</h3>
-      <div class="networks__elem">
-        <ul class="networks__list">
-          <li class="networks__item">
-            <a href="#" class="networks__link">
-              <img src="#" alt="vk" class="networks__icon">
-            </a>
-          </li>
-          <li class="networks__item">
-            <a href="#" class="networks__link">
-              <img src="#" alt="fb" class="networks__icon">
-            </a>
-          </li>
-          <li class="networks__item">
-            <a href="#" class="networks__link">
-              <img src="#" alt="google" class="networks__icon"></a>
-          </li>
-          <li class="networks__item">
-            <a href="#" class="networks__link">
-              <img src="#" alt="twitter" class="networks__icon"></a>
-          </li>
-          <li class="networks__item">
-            <a href="#" class="networks__link">
-              <img src="#" alt="mail" class="networks__icon"></a>
-          </li>
-        </ul>
-
+        </main>
       </div>
 
     </div>
+    <footer class="footer">
+      <address class="address">Сделано с любовью и старанием
+        на курсе «HTML + CSS» в
+        <a href="https://loftschool.com/">LoftSchool.</a>
+        Автор работы:<span>Егер Ольга</span>
+      </address>
+      <div class="logo">
+        <img src="logo-fig.png" alt="logo" class="logo__pic">
+      </div>
+      <div class="networks">
+        <h3>Наши социальные сети</h3>
+        <div class="networks__elem">
+          <ul class="networks__list">
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <img src="#" alt="vk" class="networks__icon">
+              </a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <img src="#" alt="fb" class="networks__icon">
+              </a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <img src="#" alt="google" class="networks__icon"></a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <img src="#" alt="twitter" class="networks__icon"></a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <img src="#" alt="mail" class="networks__icon"></a>
+            </li>
+          </ul>
 
-  </footer>
-  
+        </div>
+
+      </div>
+
+    </footer>
+  </div>
+
 </body>
+
 </html>

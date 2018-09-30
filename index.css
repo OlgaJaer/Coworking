@@ -1,13 +1,156 @@
-.header-pic {/* Style for "Rectangle" */
-/*width: 1100px;*/
-height: 77px;
-background-color: #27273e;
+body {
+  font-family: 'Roboto', Helvetica, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiansed;
+  -moz-osx-font-smoothing: grayscale; 
 }
-.logo-fig {/* Style for "logo-fig" */
-width: 99px;
-height: 51px;
+
+/* Style for "header" */
+.container-1 {
+  width: 1100px;
+  margin: 0 auto;
+  min-height: 77px;
 }
-.feeds__pics {/* Style for "Layer 9" */
-width: 160px;
-height: 160px;
+
+.header {
+  height: 435spx;
+  background: #27273e;
+  position: relative; 
+  margin-bottom: 67px;
+}
+
+.logo,
+.contacts {
+  display: inline;
+  position: absolute;
+}
+
+header .logo__pic {
+  padding: 13px 19px;
+}
+.logo {
+  left: 0;
+}
+
+.contacts {
+ /* top: 22px; 
+  bottom: 17px;*/
+  right: 21px;
+}
+
+.contacts__phone {
+  padding-top: 22px;
+  font-size: 21px;
+}
+
+.contacts__phone-link {
+  /* Style for "8 (800) 00" */
+  width: 198px;
+  height: 18px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.logo-fig {
+  /* Style for "logo-fig" */
+  width: 99px;
+  height: 51px;
+}
+
+.contacts__shedule {
+  text-align: right;
+}
+
+button {
+  /* Style for "График раб" */
+  background: #27273e;
+  border: #27273e;
+  color: #ec1e79;
+  text-decoration: underline;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.banner {
+  display: block;
+}
+
+.container {
+ position: relative;
+ width: 1100px;
+ margin: 0 auto;
+ height: 1402px;
+}
+
+.container__block {
+  display: inline;
+ position: absolute;
+}
+
+
+.sidebar {
+  width: 114px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container__block {
+  right: 0px;
+  width: 906px;
+  height: 1402px;
+}
+
+.menu > li {
+  list-style: none;
+  padding-left: 57px;
+  width: 71px;
+height: 11px;
+margin-bottom: 38px;
+
+text-decoration: underline;
+text-transform: uppercase;
+
+}
+
+.menu__item {
+  margin-bottom: 40px;
+}
+
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 19px;
+}
+.menu__link:before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  background: url(/images/main_icon.png) center center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+.menu__link:hover {
+  color: #ec1e79;
+}
+.menu__link:hover:before {
+  background: url(/images/main_icon\ copy.png) center center no-repeat;
+}
+
+.menu__link__feedback:before {
+  background: url(/images/feed_icon.png) ; 
+}
+.menu__link__tarif:before {
+  background: url(/images/wallet_icon.png) ;
 }
