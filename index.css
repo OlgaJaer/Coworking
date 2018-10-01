@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'GothamPro-Light';
+  src: url('GothamPro-Light.eot?#iefix') format('embedded-opentype'),  url('GothamPro-Light.otf')  format('opentype'),
+	     url('GothamPro-Light.woff') format('woff'), url('GothamPro-Light.ttf')  format('truetype'), url('GothamPro-Light.svg#GothamPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   margin: 0;
@@ -41,6 +51,7 @@ header .logo__pic {
 .contacts__phone {
   padding-top: 22px;
   font-size: 21px;
+  font-family: 'GothamPro-Light', Helvetica, sans-serif;
 }
 
 .contacts__phone-link {
@@ -93,6 +104,7 @@ button {
   width: 114px;
   display: inline-block;
   vertical-align: top;
+  font-family: 'GothamPro-Light', Helvetica, sans-serif;
 }
 
 .menu__list {
@@ -127,7 +139,7 @@ text-transform: uppercase;
 .menu__link {
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'GothamPro-Light', Helvetica, sans-serif;
   letter-spacing: 1.2px;
   font-size: 12px;
   font-weight: 700;
@@ -195,7 +207,7 @@ h1 {
 
 .feateres__headline {
   font-size: 49px;
-font-family: 'Gotham Pro' Helvetica, sans-serif; 
+font-family: 'GothamPro-Light', Helvetica, sans-serif; 
 }
 
 .feateres__block {
@@ -231,7 +243,7 @@ margin-right: 69px;
 
 .feateres__title {
 color: #212121;
-font-family: "Gotham Pro";
+font-family: 'GothamPro-Light';
 font-size: 11px;
 font-weight: 700;
 text-transform: uppercase;
@@ -240,23 +252,21 @@ letter-spacing: 2.88px
 
 .feateres__text {
 color: #221f1f;
-font-family: "Gotham Pro";
+font-family: 'GothamPro-Light';
 font-size: 18px;
 font-weight: 400;
 }
 
 .feateres__list-full {
   color: #cc3366;
-  font-family: "Gotham Pro";
+  font-family: 'GothamPro-Light';
   font-size: 18px;
   line-height: 30px; 
+  text-align: left;
 }
 
 .feateres__list-detail span {
   color: #221f1f;
-}
-.feateres__list-full {
-  text-align: left;
 }
 
 .news {
@@ -267,32 +277,52 @@ font-weight: 400;
 }
  
 .news__headline {
-  /* Style for "Последние" */
-width: 498px;
-height: 40px;
 color: #221f1f;
-font-family: "Gotham Pro";
+font-family: 'GothamPro-Light', Tahoma, sans-serif;
 font-size: 49px;
 font-weight: 700;
 line-height: 38px;
 }
 
+.news__headline-block {
+  margin-bottom: 75px;
+}
+
 .news__item {
 min-height: 194px;
 width: 906px;
-position: relative;
+}
+
+.news__item-border {
+  width: 880px;
+padding-top: 30px;
+  border-top: 2px solid #f5f5f5;
+}
+
+
+.news__item-img {
+  margin-right: 20px;
+  width: 160px;
+  height: 160px;
+  display: inline-block;
+  position: relative;
 }
 
 .news__item-content {
 min-height: 190px;
-min-width: 685px;  
+max-width: 726px; 
+display: inline-block;
+position: absolute;
 }
+ 
+.news__item-content p {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
 .news__item-pics {
   border-radius: 50%;
 background-color:  #cfd8dc;
-display: inline-block;
-margin-top: 30px;
-position: absolute;
 width: 160px;
 height: 160px;
 overflow: hidden;
@@ -300,27 +330,101 @@ overflow: hidden;
 }
 
 .news__pagination {
-  clear: left;
+  
+ margin-left: 278px;
+/*    display: inline-block;*/
+  
+  }
+ /* clear: left;
   display: block;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 74px;
-
+*/
+.news__pagination-pages {
+  margin: 0;
+  padding: 18px;
+}
+.news__pagination-item, .news__pagination-text,
+ .news__pagination-elem, .news__pagination, .news__pagination-pages {
+  display: inline;
 }
 .news__pagination-text {
-  color: #221f1f;
-font-size: 14px;
 margin-right: 20px;
-}
-.news__pagination-elem, .news__pagination-pages, 
-.news__pagination-text, .news__pagination-item {
-  display: inline-block;
+color: #656464;
+font-size: 14px;
+font-weight: 300;
+line-height: 21px;
 }
 
+.news__pagination-item {
+color: #221f1f;
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+}
 
+.news__pagination-link, .news__pagination-prev-next {
+  text-decoration: none;
+}
+
+.news__pagination-elem.news__pagination-prev-next {
+  opacity: 0.3;
+}
 
 .footer {
   height: 435spx;
   background: #27273e;
   position: relative; 
+}
+
+.address, .logo, .networks {
+  position: absolute;
+  display: inline;
+}
+
+.address {
+  left: 0;
+  width: 264px;
+  height: 48px;
+ margin-left: 9px;
+ margin-top: 14px;
+color: #ffffff;
+font-size: 14px;
+font-weight: 300;
+line-height: 18px;
+font-family: 'GothamPro-Light';
+font-style: normal;
+}
+.logo {
+  margin-left: 500px;
+  margin: 14px;
+  text-align: center;
+}
+
+.networks {
+  right: 0;
+  width: 168px;
+  height: 41px;
+}
+
+.address__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.address span {
+  font-weight: 700;
+}
+
+.networks__title {
+  /* Style for "Наши социа" */
+width: 170px;
+height: 12px;
+color: #ffffff;
+font-family: 'GothamPro-Light';
+font-size: 12px;
+
+margin-top: 20px;
 }
