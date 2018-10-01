@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  height: 435spx;
+  height: 435px;
   background: #27273e;
   position: relative; 
   margin-bottom: 67px;
@@ -43,8 +43,6 @@ header .logo__pic {
 }
 
 .contacts {
- /* top: 22px; 
-  bottom: 17px;*/
   right: 21px;
 }
 
@@ -92,7 +90,7 @@ button {
  position: relative;
  width: 1100px;
  margin: 0 auto;
- height: 1402px;
+ min-height: 1402px;
 }
 
 .container__block {
@@ -101,24 +99,20 @@ button {
 }
 
 .sidebar {
-  width: 114px;
+  width: 170px;
   display: inline-block;
   vertical-align: top;
   font-family: 'GothamPro-Light', Helvetica, sans-serif;
+  margin-left: 20px;
 }
 
 .menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 20px;
+  margin-left: 19px;
 }
 
-.container__block {
-  right: 0px;
-  width: 906px;
-  height: 1402px;
-}
 
 .menu > li {
   list-style: none;
@@ -133,7 +127,7 @@ text-transform: uppercase;
 }
 
 .menu__item {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .menu__link {
@@ -187,6 +181,11 @@ text-transform: uppercase;
 .menu__link__tarif:hover:before {
   background-image: url(images/wallet_icon3.png) ;
 }
+.container__block {
+  right: 0px;
+  width: 906px;
+  height: 1402px;
+}
 
 .maincontent {
   width: 906px;
@@ -206,12 +205,13 @@ h1 {
 
 
 .feateres__headline {
-  font-size: 49px;
-font-family: 'GothamPro-Light', Helvetica, sans-serif; 
+font-size: 31px;
+font-family: Verdana, Geneva, Tahoma, sans-serif; 
+font-weight: 700px;
+margin-bottom: 61px;
 }
 
 .feateres__block {
- 
   min-height: 286px;
 }
 
@@ -227,18 +227,19 @@ margin-right: 69px;
   border-radius: 50%;
   border: 1px solid #000;
   background: #000;
-  width: 72px;
-  height: 72px;
+  width: 71px;
+  height: 71px;
   background-position: center;
-  margin-bottom: 35px;
+  margin-bottom: 21px;
 }
 
-.feateres-pics, .feateres__icon {
+.feateres__pics, .feateres__icon {
   display: inline-block;
 }
 
-.feateres-pics {
+.feateres__pics {
   background-position: center;
+  padding: 20px;
 }
 
 .feateres__title {
@@ -247,7 +248,7 @@ font-family: 'GothamPro-Light';
 font-size: 11px;
 font-weight: 700;
 text-transform: uppercase;
-letter-spacing: 2.88px
+letter-spacing: 2.88px;
 }
 
 .feateres__text {
@@ -255,6 +256,7 @@ color: #221f1f;
 font-family: 'GothamPro-Light';
 font-size: 18px;
 font-weight: 400;
+line-height: 30px;
 }
 
 .feateres__list-full {
@@ -278,8 +280,8 @@ font-weight: 400;
  
 .news__headline {
 color: #221f1f;
-font-family: 'GothamPro-Light', Tahoma, sans-serif;
-font-size: 49px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 45px;
 font-weight: 700;
 line-height: 38px;
 }
@@ -320,6 +322,17 @@ position: absolute;
   margin-bottom: 24px;
 }
 
+.news__item-data {
+color: #221f1f;
+font-size: 14px;
+font-weight: 300px;
+line-height: 21px;
+}
+
+.news__item-title {
+  font-weight: 700;
+  line-height: 21px;
+}
 .news__item-pics {
   border-radius: 50%;
 background-color:  #cfd8dc;
@@ -332,15 +345,8 @@ overflow: hidden;
 .news__pagination {
   
  margin-left: 278px;
-/*    display: inline-block;*/
-  
-  }
- /* clear: left;
-  display: block;
-  text-align: center;
-  margin-top: 60px;
-  margin-bottom: 74px;
-*/
+}
+
 .news__pagination-pages {
   margin: 0;
   padding: 18px;
@@ -378,7 +384,7 @@ line-height: 21px;
   position: relative; 
 }
 
-.address, .logo, .networks {
+.address, .footer .logo, .networks {
   position: absolute;
   display: inline;
 }
@@ -396,10 +402,9 @@ line-height: 18px;
 font-family: 'GothamPro-Light';
 font-style: normal;
 }
-.logo {
+.footer .logo {
   margin-left: 500px;
-  margin: 14px;
-  text-align: center;
+  margin-top: 14px;
 }
 
 .networks {
@@ -418,13 +423,40 @@ font-style: normal;
   font-weight: 700;
 }
 
-.networks__title {
+.networks__title h3 {
   /* Style for "Наши социа" */
 width: 170px;
 height: 12px;
 color: #ffffff;
 font-family: 'GothamPro-Light';
-font-size: 12px;
-
+font-size: 13px;
+margin: 0;
 margin-top: 20px;
+}
+
+.networks__list {
+  margin: 0;
+  padding: 0;
+}
+.networks__item {
+display: inline-block;
+}
+
+.networks__item {
+  border-radius: 50%;
+  border: 1px solid #d4d4d8;
+  width: 18px;
+  height: 18px;
+  background-color: #d4d4d8;
+  background-position: center;
+  margin-top: 9px;
+  margin-right: 9px;
+}
+.networks__item__vk:hover {
+  background-color: #ec1e79;
+  border-radius: 50%;
+  border: 1px solid #ec1e79;
+}
+.networks__icon {
+ margin-left: 3px;
 }
