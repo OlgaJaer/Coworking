@@ -5,7 +5,21 @@
   font-weight: normal;
   font-style: normal;
 }
+html, body {
+  height: 100%;
+}
 
+.wrapper {
+  overflow: hidden;
+  min-width: 1100px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper__content {
+flex: 1;
+}
 
 
 body {
@@ -15,18 +29,23 @@ body {
   -moz-osx-font-smoothing: grayscale; 
 }
 
-/* Style for "header" */
+.container {
+  width: 1060px;
+  margin: 0 auto; 
+  display: flex;
+ }
+/* Style for "header" 
 .container-1 {
   width: 1100px;
   margin: 0 auto;
   min-height: 77px;
-}
+}*/
 
 .header {
-  height: 435px;
+  height: 77px;
   background: #27273e;
   position: relative; 
-  margin-bottom: 67px;
+
 }
 
 .logo,
@@ -84,26 +103,30 @@ button {
 
 .banner {
   display: block;
+  background: #27273e;
+  height: 359px;
+  margin-bottom: 67px;
+}
+.banner__pic {
+height: 359px;
 }
 
-.container {
- position: relative;
- width: 1100px;
- margin: 0 auto;
- min-height: 1402px;
-}
 
-.container__block {
+/*.container__block {
   display: inline;
  position: absolute;
-}
+ }*/
+ .content {
+   position: relative;
+ }
 
 .sidebar {
-  width: 170px;
+  width: 182px;
   display: inline-block;
   vertical-align: top;
   font-family: 'GothamPro-Light', Helvetica, sans-serif;
   margin-left: 20px;
+  display: inline-block;
 }
 
 .menu__list {
@@ -120,10 +143,8 @@ button {
   width: 71px;
 height: 11px;
 margin-bottom: 38px;
-
 text-decoration: underline;
 text-transform: uppercase;
-
 }
 
 .menu__item {
@@ -183,12 +204,15 @@ text-transform: uppercase;
 }
 .container__block {
   right: 0px;
-  width: 906px;
-  height: 1402px;
+  width: 878px;
+ 
 }
 
 .maincontent {
-  width: 906px;
+  position: absolute;
+  width: 878px;
+display: inline-block;
+
 }
 
 .feateres {
@@ -274,7 +298,7 @@ line-height: 30px;
 .news {
   padding: 0;
   margin: 0;
-  min-height: 813px;
+ /* min-height: 813px;*/
 
 }
  
@@ -292,7 +316,7 @@ line-height: 38px;
 
 .news__item {
 min-height: 194px;
-width: 906px;
+width: 878px;
 }
 
 .news__item-border {
@@ -379,7 +403,7 @@ line-height: 21px;
 }
 
 .footer {
-  height: 435spx;
+  height: 77px;
   background: #27273e;
   position: relative; 
 }
