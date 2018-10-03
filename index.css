@@ -69,6 +69,9 @@ header .logo__pic {
 .contacts__phone {
   font-size: 21px;
   font-family: 'GothamPro-Light', Helvetica, sans-serif;
+font-weight: 700;
+letter-spacing: 1.5px;
+text-transform: uppercase;
 }
 
 .contacts__phone-link {
@@ -88,6 +91,7 @@ button {
   background: #27273e;
   border: #27273e;
   color: #ec1e79;
+  font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: underline;
   font-size: 14px;
   opacity: 0.7;
@@ -108,7 +112,7 @@ button {
 }
 
 .main-block {
-  margin-bottom: 74px;
+  margin-bottom: 70px;
 }
 
 .sidebar {
@@ -325,9 +329,9 @@ button {
   width: 878px;
 }
 
-.news__item-border {
+.news__item__border {
   width: 880px;
-  padding-top: 25px;
+  padding-top: 28px;
   border-top: 2px solid #f5f5f5;
 }
 
@@ -375,11 +379,12 @@ font-size: 18px;
   width: 160px;
   height: 160px;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .news__pagination {
   margin-left: 278px; /* */
-  padding-top: 72px;
+  padding-top: 38px;
 }
 .news__pagination-pages {
   margin: 0;
@@ -404,7 +409,7 @@ padding: 7px 10px;
 .news__pagination-elem,
 .news__pagination,
 .news__pagination-pages {
-  display: inline;
+  display: inline-block;
 }
 
 .news__pagination-text {
@@ -462,11 +467,10 @@ justify-content: space-between;
 
 .footer .logo {
   margin-top: 14px;
-  margin-left: 15px;
+  margin-right: 90px;
 }
 
 .networks {
-  right: 0;
   width: 168px;
   height: 41px;
 }
@@ -495,14 +499,15 @@ justify-content: space-between;
 .networks__list {
   margin: 0;
   padding: 0;
+  list-style: none;
   display: flex;
   justify-content: flex-start;
   margin: 3px;
 }
 
 
-.networks__item {
-  list-style: none;
+.networks__link {
+  display: block;
   border-radius: 50%;
   border: 1px solid #d4d4d8;
   width: 18px;
@@ -512,33 +517,41 @@ justify-content: space-between;
   margin-right: 9px;
 }
 
+
 .networks__link__vk {
+  width: 12px;
+  height: 7px;
 background-image: url(images/vk.png);
+background-position: center;
  /* background: url(images/vk.png) center center no-repeat;*/
 }
 
 .networks__link__fb {
+  width: 6px;
+  height: 13px;
   background-image: url(images/fb.png);
 }
 
 .networks__link__google {
+  width: 15px;
+  height: 9px;
   background-image: url(images/google.png);
 }
 
 .networks__link__twitter {
+  width: 11px;
+  height: 9px;
   background-image: url(images/twitter.png);
 }
 
 .networks__link__mail {
+  width: 12px;
+  height: 9px;
   background-image: url(images/mail.png);
 }
 
-.networks__link__vk:hover {
+.networks__link:hover {
   background-color: #ec1e79;
   border-radius: 50%;
   border: 1px solid #ec1e79;
-}
-
-.networks__icon {
-  margin-left: 3px;
 }
