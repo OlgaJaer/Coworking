@@ -1,0 +1,13 @@
+.header {
+  height: 77px;
+  background: #27273e;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .logo__pic {
+  padding-top: 13px;
+}

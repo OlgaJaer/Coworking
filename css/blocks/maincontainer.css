@@ -1,0 +1,16 @@
+.main-block .container {
+  display: flex;
+}
+
+.main-block {
+  margin-bottom: 70px;
+}
+
+.container__block {
+  right: 0px;
+  width: 878px;
+}
+
+.maincontent {
+  width: 878px;
+}

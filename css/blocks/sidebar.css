@@ -1,0 +1,86 @@
+.sidebar {
+  width: 180px;
+  vertical-align: top;
+  font-family: 'GothamPro', Helvetica, sans-serif;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu>li {
+  list-style: none;
+  padding-left: 57px;
+  width: 71px;
+  height: 11px;
+  margin-bottom: 38px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.menu__item {
+  margin-bottom: 32px;
+}
+
+.menu__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'GothamPro', Helvetica, sans-serif;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 19px;
+  color: #000;
+}
+
+
+.menu__link:before {
+  content: "";
+  width: 20px;
+  height: 18px;
+  background: url(../../images/main_icon.png) center center no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 19px;
+}
+
+.menu__text {
+  max-width: 120px;
+  display: inline-block;
+}
+
+.menu__link:hover {
+  color: #ec1e79;
+}
+
+.menu__link:hover:before {
+  background: url(../../images/main_icon2.png) center center no-repeat;
+}
+
+.menu__link__feedback,
+.menu__link__tarif {
+  color: #ec1e79;
+}
+
+.menu__link__feedback:hover,
+.menu__link__tarif:hover {
+  color: #000;
+}
+
+.menu__link__feedback:before {
+  background-image: url(../../images/feed_icon.png);
+}
+
+.menu__link__tarif:before {
+  background-image: url(../../images/wallet_icon.png);
+}
+
+.menu__link__feedback:hover:before {
+  background-image: url(../../images/feed_icon3.png);
+}
+
+.menu__link__tarif:hover:before {
+  background-image: url(../../images/wallet_icon3.png);
+}

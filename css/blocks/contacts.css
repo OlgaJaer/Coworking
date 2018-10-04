@@ -1,0 +1,32 @@
+.contacts {
+  padding-top: 22px;
+}
+
+.contacts__phone {
+  font-size: 21px;
+  font-family: 'GothamPro-Light', Helvetica, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.contacts__phone-link {
+  text-decoration: none;
+  color: #fff;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.contacts__shedule {
+  text-align: right;
+}
+
+button {
+  background: #27273e;
+  border: #27273e;
+  color: #ec1e79;
+  font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+  font-size: 14px;
+  opacity: 0.7;
+}

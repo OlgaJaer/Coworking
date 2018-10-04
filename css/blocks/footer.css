@@ -1,0 +1,109 @@
+.footer {
+  height: 77px;
+  background: #27273e;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.address {
+  width: 264px;
+  height: 48px;
+  margin-top: 9px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  font-family: 'GothamPro';
+  font-style: normal;
+}
+
+.footer .logo {
+  margin-top: 14px;
+  margin-right: 90px;
+}
+
+.networks {
+  width: 168px;
+  height: 41px;
+}
+
+.address__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.address span {
+  font-weight: 700;
+}
+
+.networks__title h3 {
+  /* Style for "Наши социа" */
+  width: 170px;
+  height: 12px;
+  color: #ffffff;
+  font-family: 'GothamPro';
+  font-size: 13px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.networks__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  margin: 3px;
+}
+
+.networks__link {
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #d4d4d8;
+  width: 18px;
+  height: 18px;
+  background-color: #d4d4d8;
+  margin-top: 9px;
+  margin-right: 9px;
+}
+
+.networks__link__vk {
+  width: 12px;
+  height: 7px;
+  background-image: url(../../images/vk.png);
+  background-position: center;
+}
+
+.networks__link__fb {
+  width: 6px;
+  height: 13px;
+  background-image: url(../../images/fb.png);
+}
+
+.networks__link__google {
+  width: 15px;
+  height: 9px;
+  background-image: url(../../images/google.png);
+}
+
+.networks__link__twitter {
+  width: 11px;
+  height: 9px;
+  background-image: url(../../images/twitter.png);
+}
+
+.networks__link__mail {
+  width: 12px;
+  height: 9px;
+  background-image: url(../../images/mail.png);
+}
+
+.networks__link:hover {
+  background-color: #ec1e79;
+  border-radius: 50%;
+  border: 1px solid #ec1e79;
+}
