@@ -69,6 +69,9 @@
   background-color: #d4d4d8;
   margin-top: 9px;
   margin-right: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .networks__link__vk {

@@ -1,63 +1,80 @@
 .news__pagination {
-  margin-left: 278px;
-  /* */
   padding-top: 38px;
+  display: flex;
+  justify-content: flex-start;
+padding-left: 276px;
 }
 
-.news__pagination-pages {
-  margin: 0;
-  padding: 0;
-}
-
-.news__pagination-pages .li {
-  margin: 0;
-  padding: 0;
-  /*width: 25px;
-height: 25px;*/
-}
-
-.news__pagination__link__first {
-  background-color: #27273e;
-  color: #ffffff;
-  padding: 7px 10px;
-}
-
-.news__pagination-item,
-.news__pagination-text,
-.news__pagination-elem,
-.news__pagination,
-.news__pagination-pages {
-  display: inline-block;
+.news__pagination-elem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .news__pagination-text {
-  margin-right: 20px;
+  margin-right: 14px;
   color: #656464;
   font-size: 14px;
   font-weight: 300;
   line-height: 21px;
-  margin-bottom: 73px;
+}
+
+.news__pagination-pages {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .news__pagination-item {
   color: #221f1f;
   font-size: 14px;
   font-weight: 700;
-  margin-right: 17px;
+  margin-right: 3px;
+  width: 21px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__pagination__prev {
+  width: 6px;
+  height: 10px;
+  background-image: url(../../images/Object1.png);
+}
+
+.news__pagination__link__active {
+  background-color: #27273e;
+  border: 2px solid #27273e;
+  border-radius: 2px;
+}
+
+.news__pagination__link__active a {
+  color: #ffffff;
+}
+
+.news__pagination-prev-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news__pagination__next {
+  width: 6px;
+  height: 10px;
+  background-image: url(../../images/Object2.png); 
 }
 
 .news__pagination__link,
 .news__pagination-prev-next {
   text-decoration: none;
   color: #221f1f;
-  /*
-font-family: Roboto;
-font-size: 14px;
-font-weight: 700;
-line-height: 21px;
-*/
 }
 
-.news__pagination-elem.news__pagination-prev-next {
-  opacity: 0.3;
+
+.news__pagination__link:hover {
+  color: #ae2264;
 }
