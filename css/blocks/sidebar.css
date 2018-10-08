@@ -32,15 +32,16 @@
   font-size: 12px;
   font-weight: 700;
   margin-right: 19px;
-  color: #000;
+  color: #ec1e79; 
 }
+
 
 
 .menu__link:before {
   content: "";
   width: 20px;
   height: 18px;
-  background: url(../../images/main_icon.png) center center no-repeat;
+  
   display: inline-block;
   vertical-align: middle;
   margin-right: 19px;
@@ -51,29 +52,38 @@
   display: inline-block;
 }
 
-.menu__link:hover {
-  color: #ec1e79;
+.menu__link__main:before {
+ background: url(../../images/main_icon2.png) center center no-repeat;
 }
 
-.menu__link:hover:before {
-  background: url(../../images/main_icon2.png) center center no-repeat;
+.menu__link__main-active:before {
+  background: url(../../images/main_icon.png) center center no-repeat;
 }
 
-.menu__link__feedback,
-.menu__link__tarif {
-  color: #ec1e79;
+.menu__link__main:hover:before {
+  background: url(../../images/main_icon.png) center center no-repeat;
 }
 
+.menu__link__main-active:hover:before {  /* */
+  background-image: url(../../images/main_icon2.png);
+}
+
+.menu__link__feedback-active, .menu__link__tariff-active, .menu__link__main-active  {
+  color: #000; 
+}
+
+.menu__link__main:hover,
 .menu__link__feedback:hover,
-.menu__link__tarif:hover {
+.menu__link__tariff:hover {
   color: #000;
 }
+
 
 .menu__link__feedback:before {
   background-image: url(../../images/feed_icon.png);
 }
 
-.menu__link__tarif:before {
+.menu__link__tariff:before {
   background-image: url(../../images/wallet_icon.png);
 }
 
@@ -81,6 +91,26 @@
   background-image: url(../../images/feed_icon3.png);
 }
 
-.menu__link__tarif:hover:before {
+.menu__link__tariff:hover:before {
   background-image: url(../../images/wallet_icon3.png);
+}
+
+.menu__link__feedback-active:before {
+  background-image: url(../../images/feed_icon3.png);
+}
+
+.menu__link__feedback-active:hover:before {
+  background-image: url(../../images/feed_icon.png);
+}
+
+.menu__link__tariff-active:before {
+  background-image: url(../../images/wallet_icon3.png);
+}
+
+.menu__link__tariff-active:hover:before {
+  background-image: url(../../images/wallet_icon.png);
+}
+
+.menu__link__main-active:hover, .menu__link__feedback-active:hover, .menu__link__tariff-active:hover  {
+  color: #ec1e79;
 }

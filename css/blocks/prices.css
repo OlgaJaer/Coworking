@@ -1,0 +1,110 @@
+.prices__headline {
+  color: #221f1f;
+  font-family: "GothamPro";
+  font-size: 49px;
+  font-weight: 700;
+  line-height: 38px;
+}
+
+.prices {
+  display: flex;
+  flex-flow: column;
+  width: 860px;
+}
+
+.prices__block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.prices__item__tariff {
+  margin: 0;
+  margin: 20px 0 10px 0;
+}
+
+.prices__item__img {
+  width: 250px;
+  height: 153px;
+}
+
+
+.prices__item__img1 {
+  background: url(../../images/1qk.jpg);
+}
+
+.prices__item__img2 {
+  background: url(../../images/1yu.jpg);
+}
+
+.prices__item__img3 {
+  background: url(../../images/pdi.png);
+}
+
+.prices__item__img4 {
+  background: url(../../images/ixh.jpg);
+}
+
+.prices__item__img5 {
+  background: url(../../images/c3.jpg);
+}
+
+.prices__item__img6 {
+  background: url(../../images/x5.jpg);
+}
+
+.prices__item__layer {
+  background-color: #27273e;
+  opacity: 0.85;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prices__item__layer:hover {
+  background-color: transparent;
+}
+
+.prices__item__layer span {
+  text-transform: uppercase;
+}
+
+.prices__item__title {
+  font-family: "GothamPro";
+  text-align: center;
+  color: #5dd1f8;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 21px;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+
+.prices__item__title span {
+  color: #ec1e79;
+}
+
+.prices__item {
+  color: #221f1f;
+  font-family: "GothamPro";
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  width: 250px;
+  text-align: center;
+  min-height: fit-content;
+  margin-bottom: 25px;
+}
+
+.prices__item__tariff {
+  font-family: "GothamPro";
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.prices__item__desc {
+  font-family: "GothamPro";
+  font-weight: 300;
+}

@@ -28,24 +28,24 @@
       </div>
     </header>
 
-    <div class="main-block">
+    <div class="main-block main-block__comments">
       <div class="container">
 
         <aside class="sidebar">
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="index.html" class="menu__link">
+                <a href="index.html" class="menu__link menu__link__main">
                   <div class="menu__text">главная</div>
                 </a>
               </li>
               <li class="menu__item">
-                <a href="#" class="menu__link menu__link__feedback">
+                <a href="#" class="menu__link menu__link__feedback menu__link__feedback-active">
                   <div class="menu__text">отзывы</div>
                 </a>
               </li>
               <li class="menu__item">
-                <a href="prices.html" class="menu__link menu__link__tarif">
+                <a href="prices.html" class="menu__link menu__link__tariff">
                   <div class="menu__text">тарифы</div>
                 </a>
               </li>
@@ -58,39 +58,36 @@
           <nav class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
-                <a href="index.html" class="breadcrumbs__link"> Главная</a></li>
-              <li class="breadcrumbs__item">
-                <div class="breadcrumbs__slash">/</div>
-                <p class="breadcrumbs__item"> Отзывы</p>
-              </li>
+                <a href="index.html" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item">Тариф</li>
             </ul>
           </nav>
 
-          <div class="maincontent">
+         
             <main class="comments">
               <div class="comments__headline-block">
                 <h1 class="comments__headline">Отзывы</h1>
               </div>
-              <section class="comments__item">
-                <div class="comments__item-img"><img class="comments__item-pics" src="images/vcvb.jpg" alt="фото Олега Павлова">
+              <section class="list-view">
+                <div class="list-view__img"><img class="list-view__pic" src="images/vcvb.jpg" alt="фото Олега Павлова">
                 </div>
-                <div class="comments__item-content">
-                  <div class="comments__item-data">12.10.2016</div>
-                  <h3 class="comments__item-title">Олег Павлов</h3>
-                  <p class="comments__item-text">Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим
+                <div class="list-view__content">
+                  <div class="list-view__data">12.10.2016</div>
+                  <h3 class="list-view__title">Олег Павлов</h3>
+                  <p class="list-view__text">Пользуемся услугами коворкинга стабильно раз в неделю, когда проводим
                     совещания директоров. Получается намного дешевле и удобно всем добираться. Единственное пожелание –
                     расширить меню, потому что бизнес-ланчи – это все таки средний уровень, а хочется чего то более
                     вкусного, чтобы можно было угощать начальство.
                   </p>
                 </div>
               </section>
-              <section class="comments__item comments__item__border">
-                <div class="comments__item-img"><img class="comments__item-pics" src="images/fdfd.jpg" alt="фото Эрнеста Изиля">
+              <section class="list-view list-view__border">
+                <div class="list-view__img"><img class="list-view__pic" src="images/fdfd.jpg" alt="фото Эрнеста Изиля">
                 </div>
-                <div class="comments__item-content">
-                  <div class="comments__item-data">01.02.2016</div>
-                  <h2 class="comments__item-title">Эрнест Изиль</h2>
-                  <p class="comments__item-text">Я фрилансер, программист, работать дома не могу, так как мешают дети.
+                <div class="list-view__content">
+                  <div class="list-view__data">01.02.2016</div>
+                  <h2 class="list-view__title">Эрнест Изиль</h2>
+                  <p class="list-view__text">Я фрилансер, программист, работать дома не могу, так как мешают дети.
                     Здесь нашел то, что давно искал – тишину и спокойствие. Эффективность работы выросла, как и
                     гонорары. Очень удобно, что коворкинг находится недалеко от метро. Стабильный интернет, чистота и
                     порядок вокруг, никто не мешает. Цены сначала показались высокими, но учитывая полученные
@@ -98,13 +95,15 @@
                   </p>
                 </div>
               </section>
-              <section class="comments__item comments__item__border">
-                <div class="comments__item-img"><img class="comments__item-pics" src="logo-fig.png" alt="фото отсутствует">
+              <section class="list-view list-view__border">
+                <div class="list-view__img list-view__img__absent">
+                  <div class="list-view__pic__absent"></div>
+                  <!--<img class="list-view__pic" src="#" alt="фото отсутствует">-->
                 </div>
-                <div class="comments__item-content">
-                  <div class="comments__item-data">22.12.2015</div>
-                  <h2 class="comments__item-title">Елена Сургай</h2>
-                  <p class="comments__item-text"> Захожу сюда не часто, так как не мой район, но когда бываю в центре,
+                <div class="list-view__content">
+                  <div class="list-view__data">22.12.2015</div>
+                  <h2 class="list-view__title">Елена Сургай</h2>
+                  <p class="list-view__text"> Захожу сюда не часто, так как не мой район, но когда бываю в центре,
                     то периодически нужно место для плодотворной работы. Интернет-клубы не подходят, так как не
                     обеспечивают такой уровень сервиса, как Воркадиум. Здесь я нахожу вдохновение и могу выделить время
                     для творчества. Желаю Воркадиуму процветания и развития. Если будете открывать филиалы, обратите
@@ -112,97 +111,104 @@
                   </p>
                 </div>
               </section>
-              <section class="comments__item comments__item__border">
-                <div class="comments__item-img"><img class="comments__item-pics" src="images/danielle-marroquin.jpg"
-                    alt="фото Натальи Осадчай">
+              <section class="list-view list-view__border">
+                <div class="list-view__img"><img class="list-view__pic" src="images/danielle-marroquin.jpg" alt="фото Натальи Осадчай">
                 </div>
-                <div class="comments__item-content">
-                  <div class="comments__item-data">14.08.2015</div>
-                  <h2 class="comments__item-title">Наталья Осадчая</h2>
-                  <p class="comments__item-text">Провожу здесь встречи с клиентами в неформальной обстановке. Удобно,
+                <div class="list-view__content">
+                  <div class="list-view__data">14.08.2015</div>
+                  <h2 class="list-view__title">Наталья Осадчая</h2>
+                  <p class="list-view__text">Провожу здесь встречи с клиентами в неформальной обстановке. Удобно,
                     что при необходимости все под рукой – и ксерокс, и принтер и магазин канцелярии. Заключаю здесь
                     свои лучшие договора. Единственное пожелание – сделайте еще несколько переговорных комнат на 10-15
                     человек, а то они пользуются большим спросом и не всегда есть возможность забронировать.
                   </p>
                 </div>
               </section>
-              <div class="news__pagination">
-                <div class="news__pagination-elem">
-                  <div class="news__pagination-text">Страница 1 из 7</div>
+              <div class="pagination">
+                <div class="pagination-elem">
+                  <div class="pagination-text">Страница 1 из 7</div>
                 </div>
 
-                <ul class="news__pagination-pages">
-                  <li class="news__pagination-item">
-                   <!-- <a href="#" class="news__pagination-prev-next">-->
-                      <div class="news__pagination__prev"></div>
-                  <!--  </a>-->
+                <ul class="pagination">
+                  <li class="pagination-item">
+                    <!-- <a href="#" class="pagination-prev-next">-->
+                    <div class="pagination__prev"></div>
+                    <!--  </a>-->
                   </li>
-                  <li class="news__pagination-item news__pagination__link__active">
-                    <a href="#" class="news__pagination__link ">1</a>
+                  <li class="pagination-item pagination__link__active">
+                    <a href="#" class="pagination__link ">1</a>
                   </li>
-                  <li class="news__pagination-item">
-                    <a href="#" class="news__pagination__link">2</a>
+                  <li class="pagination-item">
+                    <a href="#" class="pagination__link">2</a>
                   </li>
-                  <li class="news__pagination-item">
-                    <a href="#" class="news__pagination__link">3</a>
+                  <li class="pagination-item">
+                    <a href="#" class="pagination__link">3</a>
                   </li>
-                  <li class="news__pagination-item">
-                    <a href="#" class="news__pagination__link">4</a>
+                  <li class="pagination-item">
+                    <a href="#" class="pagination__link">4</a>
                   </li>
-                  <li class="news__pagination-item">
-                    <a href="#" class="news__pagination__link">5</a>
+                  <li class="pagination-item">
+                    <a href="#" class="pagination__link">5</a>
                   </li>
-                  <li class="news__pagination-item">
-                    <a href="#" class="news__pagination__link">6</a>
+                  <li class="pagination-item">
+                    <a href="#" class="pagination__link">6</a>
                   </li>
-                  <li class="news__pagination-item">
-                    <a href="#" class="news__pagination__link">7</a>
+                  <li class="pagination-item">
+                    <a href="#" class="pagination__link">7</a>
                   </li>
-                  <li class="news__pagination-item">
-                    <a href="#" class="news__pagination-prev-next">
-                      <div class="news__pagination__next"></div>
+                  <li class="pagination-item">
+                    <a href="#" class="pagination-prev-next">
+                      <div class="pagination__next"></div>
                     </a>
                   </li>
                 </ul>
 
               </div>
             </main>
-          </div>
+          
         </div>
 
       </div>
     </div>
 
-    <div class="banner">
+    <div class="banner__comments">
       <div class="container">
         <div class="banner__content">
-          <p>Для наших новых клиентов мы предлагаем <span> скидку 50%</span> на первый день! Приходите, чтобы лично
+          <p class="banner__text">Для наших новых клиентов мы предлагаем <span class="banner__discount"> скидку 50%</span>
+            на первый день! Приходите, чтобы лично
             оценить преимущества коворкинга «Воркадиум»!</p>
         </div>
       </div>
 
     </div>
 
-    <div class="form">
+    <div class="form-block">
       <div class="container">
         <div class="form">
           <div class="form__headline">
             <h2 class="form__title">Оставить отзыв</h2>
           </div>
-          <form name="comment">
+          <form name="comment" class="form__content">
             <div class="form__contacts">
-              <div class="form__contacts__name"><label> Ваше имя<input type="text" placeholder="Андрей"></label></div>
-              <div class="form__contact__vk"><label> Ссылка на профиль VK <input type="url" placeholder="vk.com/example"></label>
+              <div class="form__contacts__name">
+                <label for="name"> Ваше имя</label>
+                <input type="text" placeholder="Андрей" id="name"></div>
+              <div class="form__contact__vk"><label for="link"> Ссылка на профиль VK </label>
+                <input type="url" placeholder="vk.com/example" id="link">
               </div>
             </div>
-            <div class="form__comments"><label> Текст отзыва<textarea placeholder="Мне понравилось"></textarea></label>
+            <div class="form__comments"><label for="comment"><span> Текст отзыва</span></label>
+              <textarea placeholder="Мне понравилось" id="comment"></textarea>
             </div>
             <div class="form__feed">
-              <div class="form__feed__avatar"> <label for="avatar"></label> Отображать фото в отзыве?
-                <input type="radio" name="comment" id="avatar"> Да
-                <input type="radio" name="comment" id="avatar"> Нет
+              <div class="form__feed__avatar"> 
+                <div>Отображать фото в отзыве?</div>
+                <input type="radio" name="comment" id="radio-yes">
+                <label for="radio-yes"> <span></span> Да</label>
+                <input type="radio" name="comment" id="radio-no">
+                <label for="radio-no"><span></span> Нет</label>
               </div>
-              <div class="form__feed__submit"><input type="submit" value="Отправить"> </div>
+              <div class="form__feed__submit"><button type="submit" class="form__feed__button"> Отправить</div>
             </div>
           </form>
         </div>

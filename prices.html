@@ -29,30 +29,30 @@
         </div>
       </header>
 
-      <div class="main-block">
+      <div class="main-block main-block__prices">
         <div class="container">
 
-            <aside class="sidebar">
-                <nav class="menu">
-                  <ul class="menu__list">
-                    <li class="menu__item">
-                      <a href="index.html" class="menu__link">
-                        <div class="menu__text">главная</div>
-                      </a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="comments.html" class="menu__link menu__link__feedback">
-                        <div class="menu__text">отзывы</div>
-                      </a>
-                    </li>
-                    <li class="menu__item">
-                      <a href="#" class="menu__link menu__link__tarif">
-                        <div class="menu__text">тарифы</div>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </aside>
+          <aside class="sidebar">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="index.html" class="menu__link menu__link__main">
+                    <div class="menu__text">главная</div>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="comments.html" class="menu__link menu__link__feedback">
+                    <div class="menu__text">отзывы</div>
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link menu__link__tariff menu__link__tariff-active">
+                    <div class="menu__text">тарифы</div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
 
           <div class="content">
 
@@ -60,21 +60,22 @@
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
                   <a href="index.html" class="breadcrumbs__link"> Главная</a></li>
-                <li class="breadcrumbs__item">
-                  <div class="breadcrumbs__slash">/</div>
-                  <p class="breadcrumbs__item">Тарифы</p>
-                </li>
+                <li class="breadcrumbs__item">Тариф</li>
               </ul>
             </nav>
 
-            <div class="maincontent">
-              <main class="prices">
-                <div class="prices__headline-block">
-                  <h1 class="prices__headline">Тарифы</h1>
-                </div>
+            <main class="prices">
+
+              <div class="prices__headline-block">
+                <h1 class="prices__headline">Тарифы</h1>
+              </div>
+              <div class="prices__block">
                 <section class="prices__item">
-                  <div class="prices__item-img"><img class="prices__item-pics" src="images/1qk.jpg" alt="фото рабочего места тарифа «Один»">
-                    <h2 class="prices__item__title">«один»</h2>
+                  <div class="prices__item__img prices__item__img1">
+                    <div class="prices__item__layer">
+                      <!--<img class="prices__item-pics" src="images/1qk.jpg" alt="фото рабочего места тарифа «Один»">-->
+                      <h2 class="prices__item__title">«один»</h2>
+                    </div>
                   </div>
                   <h3 class="prices__item__tariff">800 руб/мес или 100 руб/сутки</h3>
                   <p class="prices__item__desc">Оплачивается рабочее место на 1 человека. Есть возможность оплаты с
@@ -83,8 +84,14 @@
                   </p>
                 </section>
                 <section class="prices__item">
-                  <div class="prices__item-img"><img class="prices__item-pics" src="images/1yu.jpg" alt="фото рабочего места тарифа «Трое»">
-                    <h2 class="prices__item__title">«Трое»</h2>
+                  <div class="prices__item__img prices__item__img2">
+                    <div class="prices__item__layer">
+
+                      <h2 class="prices__item__title">«Трое»</h2>
+
+                    </div>
+                    <!--<img class="prices__item-pics" src="images/1yu.jpg" alt="фото рабочего места тарифа «Трое»">-->
+
                   </div>
                   <h3 class="prices__item__tariff"> 1 500 руб/мес
                     или 200 руб/сутки</h3>
@@ -93,8 +100,11 @@
                     Можно пользоваться офисной техникой и выделенным шкафом для документов.</p>
                 </section>
                 <section class="prices__item">
-                  <div class="prices__item-img"><img class="prices__item-pics" src="images/pdi.png" alt="фото рабочего места тарифа «10-10»">
-                    <h2 class="prices__item__title">«10-10»</h2>
+                  <div class="prices__item__img prices__item__img3">
+                    <div class="prices__item__layer">
+                      <!--<img class="prices__item-pics" src="images/pdi.png" alt="фото рабочего места тарифа «10-10»">-->
+                      <h2 class="prices__item__title">«10-10»</h2>
+                    </div>
                   </div>
                   <h3 class="prices__item__tariff">10 000 руб/мес</h3>
                   <p class="prices__item__desc"> Оплачивается 10 рабочих мест на любые 10 дней месяца. Отлично подходит
@@ -104,10 +114,13 @@
                   </p>
                 </section>
                 <section class="prices__item">
-                  <div class="prices__item-img"><img class="prices__item-pics" src="images/ixh.jpg" alt="фото рабочего места тарифа VIP
-                    «Безлимит на одного»">
-                    <h2 class="prices__item__title">VIP
-                      «Безлимит на одного»</h2>
+                  <div class="prices__item__img prices__item__img4">
+                    <div class="prices__item__layer">
+                      <!--<img class="prices__item-pics" src="images/ixh.jpg" alt="фото рабочего места тарифа VIP
+                    «Безлимит на одного»">-->
+                      <h2 class="prices__item__title"><span>VIP<br></span>
+                        «Безлимит на одного»</h2>
+                    </div>
                   </div>
                   <h3 class="prices__item__tariff">2 500 руб/мес</h3>
                   <p class="prices__item__desc">В стоимость включена не только оплата рабочего места, но и пользование
@@ -116,9 +129,12 @@
                   </p>
                 </section>
                 <section class="prices__item">
-                  <div class="prices__item-img"><img class="prices__item-pics" src="images/c3.jpg" alt="фото рабочего места тарифа VIP
-                    «Все включено»">
-                    <h2 class="prices__item__title">VIP«Все включено»</h2>
+                  <div class="prices__item__img prices__item__img5">
+                    <div class="prices__item__layer">
+                      <!--<img class="prices__item-pics" src="images/c3.jpg" alt="фото рабочего места тарифа VIP
+                    «Все включено»">-->
+                      <h2 class="prices__item__title"><span>VIP</span><br> «Все включено»</h2>
+                    </div>
                   </div>
                   <h3 class="prices__item__tariff">Цена рассчитывается индивидуально</h3>
                   <p class="prices__item__desc">Оплачивается необходимое число рабочих мест с привязкой к фактическому
@@ -128,8 +144,11 @@
                   </p>
                 </section>
                 <section class="prices__item">
-                  <div class="prices__item-img"><img class="prices__item-pics" src="images/x5.jpg" alt="фото рабочего места тарифа 2 500 руб/час">
-                    <h2 class="prices__item__title">2 500 руб/час — </h2>
+                  <div class="prices__item__img prices__item__img6">
+                    <div class="prices__item__layer">
+                      <!--<img class="prices__item-pics" src="images/x5.jpg" alt="фото рабочего места тарифа 2 500 руб/час">-->
+                      <h2 class="prices__item__title">2 500 руб/час — </h2>
+                    </div>
                   </div>
                   <h3 class="prices__item__tariff">800 руб/мес или 100 руб/сутки</h3>
                   <p class="prices__item__desc">Аренда среднего зала. Есть возможность раннего бронирования
@@ -137,83 +156,91 @@
                     со скидкой до 30% при полной предоплате.
                   </p>
                 </section>
-
-              </main>
-            </div>
+              </div>
+            </main>
 
             <div class="partners">
-              <div class="container">
-                <div class="partners__title">Партнёры</div>
-                <div class="partners__list">
-                  <div class="partners__list__item"> <a href="#" class="partners__list__item__link"></a> </div>
-                  <div class="partners__list__item"> <a href="#" class="partners__list__item__link"></a> </div>
-                  <div class="partners__list__item"> <a href="#" class="partners__list__item__link"></a> </div>
-                  <div class="partners__list__item"> <a href="#" class="partners__list__item__link"></a> </div>
-                  <div class="partners__list__item"> <a href="#" class="partners__list__item__link"></a> </div>
-                  <div class="partners__list__item"> <a href="#" class="partners__list__item__link"></a> </div>
-                  <!-- :nth-child(n+1) -->
-                </div>
-              </div>
-            </div>
 
+              <div class="partners__title">Партнёры</div>
+
+              <ul class="partners__list">
+                <li class="partners__list__item"><a href="#" class="partners__list__item__link"></a>
+                  <img src="images/logo-1.png" alt="Логотип компании Винтер"> </li>
+                <li class="partners__list__item"> <a href="#" class="partners__list__item__link"></a>
+                  <img src="images/logo-2.png" alt="Логотип компании Drop"></li>
+                <li class="partners__list__item"> <a href="#" class="partners__list__item__link"></a> 
+                  <img src="images/logo-3.png" alt="Логотип библиотеки Анна Ахматова"></li>
+                <li class="partners__list__item"> <a href="#" class="partners__list__item__link"></a>
+                   <img src="images/logo-4.png"
+                    alt="Логотип компании Тишкин"></li>
+                <li class="partners__list__item"><a href="#" class="partners__list__item__link"></a>
+                   <img src="images/logo-5.png"
+                    alt="Логотип компании Пуфок"></li>
+                <li class="partners__list__item"><a href="#" class="partners__list__item__link"></a> 
+                  <img src="images/logo-6.png"
+                    alt="Логотип компании Авантаж"></li>
+              </ul>
+
+            </div>
           </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <address class="address">Сделано с любовью и старанием
+        на курсе «HTML + CSS» в
+        <a class="address__link" href="https://loftschool.com/">LoftSchool.</a><br>
+        Автор работы: <span>Егер Ольга</span>
+      </address>
+      <div class="logo">
+        <a href="index.html" class="logo__link">
+          <img src="images/logo-fig.png" alt="logo" class="logo__pic">
+        </a>
+      </div>
+      <div class="networks">
+        <div class="networks__title">
+          <h3>Наши социальные сети</h3>
+        </div>
+        <div class="networks__elem">
+          <ul class="networks__list">
+            <li class="networks__item">
+              <a href="#" class="networks__link ">
+                <div class="networks__link__vk"></div>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <div class="networks__link__fb"></div>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <div class="networks__link__google"></div>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <div class=" networks__link__twitter"></div>
+              </a>
+            </li>
+            <li class="networks__item">
+              <a href="#" class="networks__link">
+                <div class=" networks__link__mail"></div>
+              </a>
+            </li>
+          </ul>
 
         </div>
+
       </div>
-      
 
     </div>
-    <footer class="footer">
-      <div class="container">
-        <address class="address">Сделано с любовью и старанием
-          на курсе «HTML + CSS» в
-          <a class="address__link" href="https://loftschool.com/">LoftSchool.</a><br>
-          Автор работы: <span>Егер Ольга</span>
-        </address>
-        <div class="logo">
-          <a href="index.html" class="logo__link">
-            <img src="images/logo-fig.png" alt="logo" class="logo__pic">
-          </a>
-        </div>
-        <div class="networks">
-          <div class="networks__title">
-            <h3>Наши социальные сети</h3>
-          </div>
-          <div class="networks__elem">
-            <ul class="networks__list">
-              <li class="networks__item">
-                <a href="#" class="networks__link ">
-                  <div class="networks__link__vk"></div>
-                </a>
-              </li>
-              <li class="networks__item">
-                <a href="#" class="networks__link">
-                  <div class="networks__link__fb"></div>
-                </a>
-              </li>
-              <li class="networks__item">
-                <a href="#" class="networks__link">
-                  <div class="networks__link__google"></div>
-                </a>
-              </li>
-              <li class="networks__item">
-                <a href="#" class="networks__link">
-                  <div class=" networks__link__twitter"></div>
-                </a>
-              </li>
-              <li class="networks__item">
-                <a href="#" class="networks__link">
-                  <div class=" networks__link__mail"></div>
-                </a>
-              </li>
-            </ul>
-
-          </div>
-
-        </div>
-
-      </div>
-  </div> <!-- wrapper__content-->
+    </div> <!-- wrapper__content-->
   </footer>
 
   </div>

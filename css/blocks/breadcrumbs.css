@@ -1,0 +1,36 @@
+.menu__link__text {
+  color: #ec1e79;
+}
+
+.menu__link__text:before {
+  background-image: url(../../images/main_icon.png);
+}
+
+.breadcrumbs__list,
+.breadcrumbs__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'GothamPro Italic', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+
+.breadcrumbs {
+  margin-bottom: -4px;
+}
+
+.breadcrumbs__item:before {
+  content: "/";
+}
+
+.breadcrumbs__item:first-child:before {
+  display: none;
+}
+
+.content {
+  width: 860px;
+  display: flex;
+  flex-flow: column;
+}

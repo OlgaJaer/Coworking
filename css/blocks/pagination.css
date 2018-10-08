@@ -1,17 +1,17 @@
-.news__pagination {
+.pagination {
   padding-top: 38px;
   display: flex;
   justify-content: flex-start;
 padding-left: 276px;
 }
 
-.news__pagination-elem {
+.pagination-elem {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.news__pagination-text {
+.pagination-text {
   margin-right: 14px;
   color: #656464;
   font-size: 14px;
@@ -19,7 +19,7 @@ padding-left: 276px;
   line-height: 21px;
 }
 
-.news__pagination-pages {
+.pagination {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -28,7 +28,7 @@ padding-left: 276px;
   align-items: center;
 }
 
-.news__pagination-item {
+.pagination-item {
   color: #221f1f;
   font-size: 14px;
   font-weight: 700;
@@ -40,41 +40,41 @@ padding-left: 276px;
   align-items: center;
 }
 
-.news__pagination__prev {
+.pagination__prev {
   width: 6px;
   height: 10px;
   background-image: url(../../images/Object1.png);
 }
 
-.news__pagination__link__active {
+.pagination__link__active {
   background-color: #27273e;
   border: 2px solid #27273e;
   border-radius: 2px;
 }
 
-.news__pagination__link__active a {
+.pagination__link__active a {
   color: #ffffff;
 }
 
-.news__pagination-prev-next {
+.pagination-prev-next {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.news__pagination__next {
+.pagination__next {
   width: 6px;
   height: 10px;
   background-image: url(../../images/Object2.png); 
 }
 
-.news__pagination__link,
-.news__pagination-prev-next {
+.pagination__link,
+.pagination-prev-next {
   text-decoration: none;
   color: #221f1f;
 }
 
 
-.news__pagination__link:hover {
+.pagination__link:hover {
   color: #ae2264;
 }
