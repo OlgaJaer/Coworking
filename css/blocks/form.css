@@ -51,6 +51,12 @@ button {
   margin-bottom: 21px;
 }
 
+#name,
+#link {
+  width: 269px;
+  height: 45px;
+}
+
 .form__comments {
   width: 100%;
   margin-top: 20px;
@@ -64,8 +70,8 @@ button {
   border: 1px solid #ffffff;
 }
 
-input:focus,
-textarea:focus {
+input#link:focus, input#name:focus,
+textarea#comment:focus {
   border: 1px solid #ec1e79;
 }
 
@@ -74,10 +80,13 @@ textarea:focus {
   justify-content: space-between;
 }
 
-#name,
-#link {
-  width: 269px;
-  height: 45px;
+.form__feed__avatar {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.form__feed__avatar:nth-child(1) {
+  flex-basis: 100%;
 }
 
 .form__feed__submit {
@@ -104,14 +113,6 @@ textarea:focus {
   border-radius: 2px solid #ec1e79;
 }
 
-.form__feed__avatar {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.form__feed__avatar:nth-child(1) {
-  flex-basis: 100%;
-}
 
 input[type="radio"] {
   display: none;
