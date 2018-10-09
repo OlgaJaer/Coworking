@@ -39,7 +39,6 @@
   content: "";
   width: 20px;
   height: 18px;
-  
   display: inline-block;
   vertical-align: middle;
   margin-right: 19px;
@@ -51,19 +50,23 @@
 }
 
 .menu__link__main:before {
- background: url(../../images/main_icon2.png) center center no-repeat;
+ background: url(../../images/spritesheet.png) center center no-repeat;
+ background-position: -69px -52px;
 }
 
 .menu__link__main-active:before {
-  background: url(../../images/main_icon.png) center center no-repeat;
+  background: url(../../images/spritesheet.png) center center no-repeat;
+  background-position: -42px -52px;
 }
 
 .menu__link__main:hover:before {
-  background: url(../../images/main_icon.png) center center no-repeat;
+  background: url(../../images/spritesheet.png) center center no-repeat;
+  background-position: -42px -52px;
 }
 
 .menu__link__main-active:hover:before {  /* */
-  background-image: url(../../images/main_icon2.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -69px -52px;
 }
 
 .menu__link__feedback-active, .menu__link__tariff-active, .menu__link__main-active  {
@@ -78,35 +81,43 @@
 
 
 .menu__link__feedback:before {
-  background-image: url(../../images/feed_icon.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -39px -5px;
 }
 
 .menu__link__tariff:before {
-  background-image: url(../../images/wallet_icon.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -27px -86px;
 }
 
 .menu__link__feedback:hover:before {
-  background-image: url(../../images/feed_icon3.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -69px -5px;
 }
 
 .menu__link__tariff:hover:before {
-  background-image: url(../../images/wallet_icon3.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -56px -86px;
 }
 
 .menu__link__feedback-active:before {
-  background-image: url(../../images/feed_icon3.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -69px -5px;
 }
 
 .menu__link__feedback-active:hover:before {
-  background-image: url(../../images/feed_icon.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -39px -5px;
 }
 
 .menu__link__tariff-active:before {
-  background-image: url(../../images/wallet_icon3.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -56px -86px;
 }
 
 .menu__link__tariff-active:hover:before {
-  background-image: url(../../images/wallet_icon.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -27px -86px;
 }
 
 .menu__link__main-active:hover, .menu__link__feedback-active:hover, .menu__link__tariff-active:hover  {

@@ -74,35 +74,39 @@
   align-items: center;
 }
 
-.networks__link__vk {
+.networks__link-vk {
   width: 12px;
   height: 7px;
-  background-image: url(../../images/vk.png);
-  background-position: center;
+  background-image: url(../../images/spritesheet.png);
+  background-position: -5px -86px;
 }
 
-.networks__link__fb {
+.networks__link-fb {
   width: 6px;
   height: 13px;
-  background-image: url(../../images/fb.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -23px -5px;
 }
 
-.networks__link__google {
+.networks__link-google {
   width: 15px;
   height: 9px;
-  background-image: url(../../images/google.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -42px -33px;
 }
 
-.networks__link__twitter {
+.networks__link-twitter {
   width: 11px;
   height: 9px;
-  background-image: url(../../images/twitter.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -134px -47px;
 }
 
-.networks__link__mail {
+.networks__link-mail {
   width: 12px;
   height: 9px;
-  background-image: url(../../images/mail.png);
+  background-image: url(../../images/spritesheet.png);
+  background-position: -67px -33px;
 }
 
 .networks__link:hover {

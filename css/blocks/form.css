@@ -89,10 +89,15 @@ textarea#comment:focus {
   flex-basis: 100%;
 }
 
+label[for="radio-no"], label[for="radio-yes"]
+{
+  display: flex;
+}
+/*
 .form__feed__submit {
   width: 32%;
   height: 45px;
-}
+}*/
 
 .form__feed__button {
   text-decoration: none;
@@ -101,7 +106,7 @@ textarea#comment:focus {
   color: #ffffff;
   font-size: 12px;
   font-weight: 700;
-  line-height: 54px;
+  padding: 10px 15px;
   text-transform: uppercase;
   letter-spacing: 2.4px;
    background-color: #27273e;
@@ -112,7 +117,6 @@ textarea#comment:focus {
   background-color: #ec1e79;
   border-radius: 2px solid #ec1e79;
 }
-
 
 input[type="radio"] {
   display: none;

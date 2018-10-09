@@ -5,7 +5,7 @@
 padding-left: 276px;
 }
 
-.pagination-elem {
+.pagination__elem {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@ padding-left: 276px;
   line-height: 21px;
 }
 
-.pagination-list {
+.pagination__list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -28,7 +28,7 @@ padding-left: 276px;
   align-items: center;
 }
 
-.pagination-item {
+.pagination__list__item {
   color: #221f1f;
   font-size: 14px;
   font-weight: 700;
@@ -40,41 +40,41 @@ padding-left: 276px;
   align-items: center;
 }
 
-.pagination__prev {
+.pagination__list__item-prev {
   width: 6px;
   height: 10px;
   background-image: url(../../images/Object1.png);
 }
 
-.pagination__link__active {
+.pagination__list__item__link-active {
   background-color: #27273e;
   border: 2px solid #27273e;
   border-radius: 2px;
 }
 
-.pagination__link__active a {
+.pagination__list__item__link-active a {
   color: #ffffff;
 }
 
-.pagination-prev-next {
+.pagination__list__item-prev-next {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.pagination__next {
+.pagination__list__item-next {
   width: 6px;
   height: 10px;
   background-image: url(../../images/Object2.png); 
 }
 
-.pagination__link,
-.pagination-prev-next {
+.pagination__list__item__link,
+.pagination__list__item-prev-next {
   text-decoration: none;
   color: #221f1f;
 }
 
 
-.pagination__link:hover {
+.pagination__list__item__link:hover {
   color: #ae2264;
 }
