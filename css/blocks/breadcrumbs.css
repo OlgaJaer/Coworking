@@ -20,7 +20,9 @@
 .breadcrumbs {
   margin-bottom: -4px;
 }
-
+.breadcrumbs__link {
+color: #ec1e79;
+}
 .breadcrumbs__item:before {
   content: "/";
 }
