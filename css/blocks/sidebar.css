@@ -1,13 +1,17 @@
 .sidebar {
-  width: 180px;
+  width: 25%;
   vertical-align: top;
   font-family: 'GothamPro', Helvetica, sans-serif;
+  display: flex;
+  flex-direction:  column;
+  margin-right: 24px;
 }
 
 .menu__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .menu>li {
@@ -18,10 +22,6 @@
   margin-bottom: 38px;
   text-decoration: underline;
   text-transform: uppercase;
-}
-
-.menu__item {
-  margin-bottom: 32px;
 }
 
 .menu__link {
@@ -43,6 +43,12 @@
   vertical-align: middle;
   margin-right: 19px;
 }
+
+.header .menu__link {
+  color: #ffffff;
+}
+  
+
 
 .menu__text {
   max-width: 120px;
@@ -123,3 +129,32 @@
 .menu__link__main-active:hover, .menu__link__feedback-active:hover, .menu__link__tariff-active:hover  {
   color: #ec1e79;
 }
+
+.header .menu__link__main-active:before {
+  background: url(../../images/spritesheet.png) center center no-repeat;
+  background-position: -69px -52px;
+  }
+
+  .header .menu__link__feedback:before {
+    background: url(../../images/feed_icon_white.png)center center no-repeat;
+  }
+
+  .header .menu__link__tariff:before {
+    background: url(../../images/wallet_icon_white.png) center center no-repeat;
+  }
+ .header .menu__link__main-active {
+  color: #ec1e79;
+ }
+
+ .header .menu__link__feedback:hover, .header .menu__link__tariff:hover {
+  color: #ec1e79;
+ }
+
+ .header .menu__link__feedback:hover:before {
+   background: url(../../images/spritesheet.png);
+   background-position: -39px -5px;
+ }
+ .header .menu__link__tariff:hover:before {
+   background: url(../../images/spritesheet.png);
+   background-position: -27px -86px;
+ }

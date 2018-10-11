@@ -1,0 +1,44 @@
+.contacts__schedule {
+  position: relative;
+  display: inline-flex;
+}
+
+.contacts__schedule:hover .contacts__schedule__menu {
+  display: block;
+}
+
+.contacts__schedule__menu {
+  position: absolute;
+  color: #ec1e79;
+  font-family: "GothamPro";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+  width: 170px;
+  top: 100%;
+  display: none;
+  margin-top: 20px;
+}
+
+.contacts__schedule__menu:before {
+  content: "";
+  height: 25px;
+  left: 0;
+  right: 0;
+  top: 24px;
+}
+
+.contacts__schedule__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.contacts__schedule__list-item span {
+  color: #221f1f;
+  font-family: "GothamPro";
+  font-weight: 300;
+}

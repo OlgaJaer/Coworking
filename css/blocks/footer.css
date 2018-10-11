@@ -1,5 +1,5 @@
 .footer {
-  height: 77px;
+  min-height: 77px;
   background: #27273e;
 }
 
@@ -8,9 +8,19 @@
   justify-content: space-between;
 }
 
+.footer__col {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.footer__col__right {
+justify-content: flex-end;
+} 
+
 .address {
   width: 264px;
-  height: 48px;
+  min-height: 48px;
   margin-top: 9px;
   color: #ffffff;
   font-size: 14px;
@@ -22,12 +32,11 @@
 
 .footer .logo {
   margin-top: 14px;
-  margin-right: 90px;
 }
 
 .networks {
-  width: 168px;
-  height: 41px;
+display: flex;
+flex-direction: column;
 }
 
 .address__link {
@@ -40,15 +49,16 @@
   font-weight: 700;
 }
 
+.networks
 .networks__title h3 {
   /* Style for "Наши социа" */
-  width: 170px;
-  height: 12px;
-  color: #ffffff;
+  min-height: 12px;
   font-family: 'GothamPro';
-  font-size: 13px;
   margin: 0;
   margin-top: 20px;
+  color: #221f1f;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .networks__list {
@@ -63,10 +73,8 @@
 .networks__link {
   display: block;
   border-radius: 50%;
-  border: 1px solid #d4d4d8;
   width: 18px;
-  height: 18px;
-  background-color: #d4d4d8;
+  min-height: 18px;
   margin-top: 9px;
   margin-right: 9px;
   display: flex;

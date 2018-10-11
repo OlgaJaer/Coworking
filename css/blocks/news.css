@@ -22,7 +22,7 @@
 .list-view {
   display: flex;
   min-height: 194px;
-  width: 878px;
+  width: 100%;
 }
 
 .list-view:nth-child(n+3) {
@@ -33,6 +33,11 @@
 
 .list-view__img {
   margin-right: 20px;
+  width: 174px;
+  height: 174px;
+}
+
+.list-view__img--size {
   width: 160px;
   height: 160px;
 }
@@ -43,7 +48,7 @@
 }
 
 .list-view__content {
-  max-width: 700px;
+ width: 100%;
 }
 
 .list-view__text {
@@ -71,20 +76,21 @@
 .list-view__pic {
   border-radius: 50%;
   background-color: #cfd8dc;
-  width: 160px;
-  height: 160px;
+  width: 174px;
+  height: 174px;
   overflow: hidden;
   object-fit: cover;
 }
 
-.list-view__pic__absent {
-  border-radius: 50%;
+.list-view__pic--size {
   width: 160px;
   height: 160px; 
+}
+
+.list-view__pic__absent {
+  border-radius: 50%;
+  width: 174px;
+  height: 174px; 
   background: url(../../images/logo-fig.png) center center no-repeat;
   background-color: #f5f5f5;
 }
-
-
-
-

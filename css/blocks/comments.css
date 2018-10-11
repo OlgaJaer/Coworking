@@ -22,12 +22,11 @@
 }
 
 .banner__comments {
+  width: 100%;
   background: #27273e;
-  height: 174px;
 }
 
 .banner__content {
-  height: 174px;
   background: url(../../images/pattern.png);
   background-repeat: round;
   display: flex;
@@ -36,7 +35,7 @@
 }
 
 .banner__text {
-  width: 60%;
+  width: 100%;
   color: #ffffff;
   font-family: "GothamPro";
   font-size: 18px;

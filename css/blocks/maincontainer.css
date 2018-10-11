@@ -8,15 +8,17 @@
 
 .container__block {
   right: 0px;
-  width: 878px;
+  width: 75%;
 }
 
 .maincontent {
-  width: 878px;
+  width: 75%;
+
 }
 
 .main-block__comments {
   margin-top: 44px;
+  margin-bottom: 15px;
 }
 
 .main-block__prices {

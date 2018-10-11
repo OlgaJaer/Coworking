@@ -1,15 +1,18 @@
 .partners {
-  width: 860px;
+  width: 100%;
+  border: 1px solid #e8e9ed;
 }
 
 .partners__title {
   color: #221f1f;
   font-family: "GothamPro";
-  font-size: 49px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 38px;
-  margin-bottom: 52px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 44px;
   margin-top: 14px;
+text-align: center;
 }
 
 .partners__list {
@@ -17,10 +20,13 @@
   padding: 0;
   list-style: none;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .partners__list__item {
-  margin-bottom: 40px;
-  width: 33%;
+  margin-bottom: 32px;
+
 }
+

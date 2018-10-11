@@ -5,6 +5,10 @@
 padding-left: 276px;
 }
 
+.pagination--comments {
+  padding-top: 18px;
+}
+
 .pagination__elem {
   display: flex;
   justify-content: center;

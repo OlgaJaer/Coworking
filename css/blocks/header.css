@@ -1,5 +1,5 @@
 .header {
-  height: 77px;
+  min-height: 77px;
   background: #27273e;
 }
 
@@ -10,4 +10,15 @@
 
 header .logo__pic {
   padding-top: 13px; 
+}
+
+.header__col {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.header__col__right {
+justify-content: flex-end;
+text-align: right;
 }
