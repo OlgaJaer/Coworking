@@ -22,6 +22,10 @@
 }
 
 .main-block__prices {
-  margin-top: 45px;
-  margin-bottom: 52px;
+  margin-top: 29px;
+  margin-bottom: -8px;
+}
+
+.main-block__comments .sidebar {
+  margin-right: 17px;
 }

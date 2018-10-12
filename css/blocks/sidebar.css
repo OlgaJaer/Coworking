@@ -1,10 +1,10 @@
 .sidebar {
-  width: 25%;
+  width: 24%;
   vertical-align: top;
   font-family: 'GothamPro', Helvetica, sans-serif;
   display: flex;
   flex-direction:  column;
-  margin-right: 24px;
+  margin-right: 27px;
 }
 
 .menu__list {
@@ -48,7 +48,9 @@
   color: #ffffff;
 }
   
-
+.menu__item {
+  margin-right: 66px;
+}
 
 .menu__text {
   max-width: 120px;

@@ -21,7 +21,7 @@
 
 .prices__item__tariff {
   margin: 0;
-  margin: 20px 0 10px 0;
+  margin: 25px 0 10px 0;
 }
 
 .prices__item__img {
@@ -92,11 +92,11 @@
   font-family: "GothamPro";
   font-size: 14px;
   font-weight: 300;
-  line-height: 21px;
-  width: 33%;
+  line-height: 20px;
+  width: 32%;
   text-align: center;
   min-height: fit-content;
-  margin-bottom: 25px;
+  margin-bottom: 67px;
 }
 
 .prices__item__tariff {

@@ -73,6 +73,11 @@ line-height: 30px;
   font-size: 18px;
   line-height: 30px;
   text-align: left;
+  margin-left: 21px;
+}
+
+.features__list-detail {
+  padding-left: 30px;
 }
 
 .features__list-detail span {

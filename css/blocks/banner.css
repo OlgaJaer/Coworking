@@ -7,3 +7,35 @@
 .banner__pic {
   height: 393px;
 }
+
+
+
+.banner__comments {
+  width: 100%;
+  background: #27273e;
+}
+
+.banner__content {
+  background: url(../../images/pattern.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 11px 7px 10px;
+}
+
+.banner__text {
+  width: 100%;
+  color: #ffffff;
+  font-family: "GothamPro";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+
+}
+
+.banner__discount {
+  color: #ec1e79;
+  font-family: "GothamPro";
+  font-weight: 700;
+}

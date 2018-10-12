@@ -1,4 +1,7 @@
 .footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   min-height: 77px;
   background: #27273e;
 }
@@ -15,8 +18,8 @@
 }
 
 .footer__col__right {
-justify-content: flex-end;
-} 
+  justify-content: flex-end;
+}
 
 .address {
   width: 264px;
@@ -34,11 +37,6 @@ justify-content: flex-end;
   margin-top: 14px;
 }
 
-.networks {
-display: flex;
-flex-direction: column;
-}
-
 .address__link {
   text-decoration: none;
   color: #ffffff;
@@ -47,78 +45,4 @@ flex-direction: column;
 
 .address span {
   font-weight: 700;
-}
-
-.networks
-.networks__title h3 {
-  /* Style for "Наши социа" */
-  min-height: 12px;
-  font-family: 'GothamPro';
-  margin: 0;
-  margin-top: 20px;
-  color: #221f1f;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.networks__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  margin: 3px;
-}
-
-.networks__link {
-  display: block;
-  border-radius: 50%;
-  width: 18px;
-  min-height: 18px;
-  margin-top: 9px;
-  margin-right: 9px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.networks__link-vk {
-  width: 12px;
-  height: 7px;
-  background-image: url(../../images/spritesheet.png);
-  background-position: -5px -86px;
-}
-
-.networks__link-fb {
-  width: 6px;
-  height: 13px;
-  background-image: url(../../images/spritesheet.png);
-  background-position: -23px -5px;
-}
-
-.networks__link-google {
-  width: 15px;
-  height: 9px;
-  background-image: url(../../images/spritesheet.png);
-  background-position: -42px -33px;
-}
-
-.networks__link-twitter {
-  width: 11px;
-  height: 9px;
-  background-image: url(../../images/spritesheet.png);
-  background-position: -134px -47px;
-}
-
-.networks__link-mail {
-  width: 12px;
-  height: 9px;
-  background-image: url(../../images/spritesheet.png);
-  background-position: -67px -33px;
-}
-
-.networks__link:hover {
-  background-color: #ec1e79;
-  border-radius: 50%;
-  border: 1px solid #ec1e79;
 }

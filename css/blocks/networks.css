@@ -1,0 +1,82 @@
+.networks {
+  display: flex;
+  flex-direction: column;
+}
+
+.networks .networks__title h3 {
+  /* Style for "Наши социа" */
+  min-height: 12px;
+  font-family: 'GothamPro';
+  margin: 0;
+  margin-top: 23px;
+  color: #221f1f;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.networks__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 3px;
+}
+
+.networks__item {
+  margin: 7px 10px;
+  
+}
+
+.networks__link {
+  display: block;
+  border-radius: 50%;
+ 
+  min-height: 18px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.networks__link-vk {
+  width: 12px;
+  height: 7px;
+  background-image: url(../../images/spritesheet.png);
+  background-position: -5px -86px;
+}
+
+.networks__link-fb {
+  width: 6px;
+  height: 13px;
+  background-image: url(../../images/spritesheet.png);
+  background-position: -23px -5px;
+}
+
+.networks__link-google {
+  width: 15px;
+  height: 9px;
+  background-image: url(../../images/spritesheet.png);
+  background-position: -42px -33px;
+}
+
+.networks__link-twitter {
+  width: 11px;
+  height: 9px;
+  background-image: url(../../images/spritesheet.png);
+  background-position: -134px -47px;
+}
+
+.networks__link-mail {
+  width: 12px;
+  height: 9px;
+  background-image: url(../../images/spritesheet.png);
+  background-position: -67px -33px;
+}
+
+.networks__link:hover {
+  background-color: #ec1e79;
+  border-radius: 50%;
+  border: 1px solid #ec1e79;
+}
