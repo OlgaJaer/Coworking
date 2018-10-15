@@ -1,3 +1,8 @@
+.banner .container {
+  width: 1200px;
+}
+
+
 .banner {
   background: #27273e;
   height: 393px;
@@ -5,14 +10,13 @@
 }
 
 .banner__pic {
-  height: 393px;
+  overflow: hidden;
 }
-
-
 
 .banner__comments {
   width: 100%;
   background: #27273e;
+  margin-top: 6px;
 }
 
 .banner__content {
@@ -38,4 +42,8 @@
   color: #ec1e79;
   font-family: "GothamPro";
   font-weight: 700;
+}
+
+.banner__comments .banner__content {
+  padding-right: 7px;
 }

@@ -1,12 +1,17 @@
 .pagination {
   padding-top: 38px;
   display: flex;
-  justify-content: flex-start;
 padding-left: 276px;
 }
 
 .pagination--comments {
-  padding-top: 18px;
+  padding-top: 22px;
+  padding-left: 220px;
+}
+
+.pagination--about {
+padding-top: 41px;
+padding-left: 205px;
 }
 
 .pagination__elem {
@@ -42,6 +47,11 @@ padding-left: 276px;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .2s;
+}
+
+.comments .pagination__list__item {
+  margin-right: 5px;
 }
 
 .pagination__list__item-prev {
@@ -58,6 +68,7 @@ padding-left: 276px;
 
 .pagination__list__item__link-active a {
   color: #ffffff;
+  transition: .2s;
 }
 
 .pagination__list__item-prev-next {
@@ -81,4 +92,5 @@ padding-left: 276px;
 
 .pagination__list__item__link:hover {
   color: #ae2264;
+  transition: .2s;
 }

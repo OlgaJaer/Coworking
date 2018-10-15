@@ -5,7 +5,6 @@
 
 .networks .networks__title h3 {
   /* Style for "Наши социа" */
-  min-height: 12px;
   font-family: 'GothamPro';
   margin: 0;
   margin-top: 23px;
@@ -21,23 +20,24 @@
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 3px;
+  margin: 5px;
 }
 
 .networks__item {
-  margin: 7px 10px;
-  
+  width: 15px;
+  height: 15px;
+  margin: 7px;
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 
 .networks__link {
   display: block;
-  border-radius: 50%;
- 
-  min-height: 18px;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .networks__link-vk {
@@ -75,8 +75,8 @@
   background-position: -67px -33px;
 }
 
-.networks__link:hover {
+.networks__item:hover {
   background-color: #ec1e79;
   border-radius: 50%;
-  border: 1px solid #ec1e79;
+  transition: background-color .2s;
 }

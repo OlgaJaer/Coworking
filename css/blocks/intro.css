@@ -1,48 +1,29 @@
-.wrapper-in {
-  background-color: #ff0000;
-  height: 100%;
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-
-
-.wrapper-in__block {
-  background-image: url(../../images/Slice_2.jpg);
-  background-size: cover;
-  height: 100%;
-  opacity: 0.85;
-}
-
-
-.container-in {
-
- margin: 0 auto;
-  width: 184px;
-  min-height: 192px;
+.container-intro {
   display: flex;
-
   flex-direction: column;
   align-items: center;
-  animation-name: jackInTheBox;
-  animation-duration: 4s;
-  animation-iteration-count: 3;
-  padding-top: 280px;
+  animation: jackInTheBox 3s;
+  -webkit-animation: jackInTheBox 3s;
 }
 
-.container-in__logo {
-  width: 161px;
-height: 119px;
-  background-image: url(logo.png);
+.container-intro__logo {
   margin-bottom: 29px;
 }
 
-.container-in__link {
+.container-intro__link {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.container-in__link-act {
+.container-intro__link-act {
   border: 3px solid #ec1e79;
   color: #ec1e79;
   font-family: "GothamPro";
@@ -52,23 +33,19 @@ height: 119px;
   text-transform: uppercase;
   letter-spacing: 1.2px;
   text-decoration: none;
-  width: 100%;
-  background-color: transparent;
+  display: block;
 }
 
-
-
-.container-in__link-act:hover {
-  border: 3px solid #ec1e79;
-background-color: #ec1e79;
-color: #ffffff;
-animation-play-state: paused;
+.container-intro__link-act:hover {
+  background-color: #ec1e79;
+  color: #ffffff;
+  animation-play-state: paused;
 }
 
 @keyframes jackInTheBox {
   from {
     opacity: 0;
-    transform: scale(.1) rotate(30deg); 
+    transform: scale(.1) rotate(30deg);
     transform-origin: center bottom;
   }
 
@@ -77,12 +54,33 @@ animation-play-state: paused;
   }
 
   14% {
-    transform: rotate(0.1deg);
+    transform: rotate(.1deg);
     opacity: 1;
   }
-   
+
   to {
-    opacity: 1;
+   
     transform: scale(1);
+  }
+}
+
+@-webkit-keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+  }
+
+  10% {
+    -webkit-transform: rotate(-10deg);
+  }
+
+  14% {
+    -webkit-transform: rotate(.1deg);
+    opacity: 1;
+  }
+
+  to { 
+    -webkit-transform: scale(1);
   }
 }

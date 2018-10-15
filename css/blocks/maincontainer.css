@@ -3,7 +3,7 @@
 }
 
 .main-block {
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 .container__block {
@@ -13,11 +13,10 @@
 
 .maincontent {
   width: 75%;
-
 }
 
 .main-block__comments {
-  margin-top: 44px;
+  margin-top: 39px;
   margin-bottom: 15px;
 }
 
@@ -29,3 +28,4 @@
 .main-block__comments .sidebar {
   margin-right: 17px;
 }
+

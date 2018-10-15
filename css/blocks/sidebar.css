@@ -14,6 +14,10 @@
   display: flex;
 }
 
+.header__col--center {
+margin-right: 15px; 
+}
+
 .menu>li {
   list-style: none;
   padding-left: 57px;
@@ -33,6 +37,7 @@
   font-weight: 700;
   margin-right: 19px;
   color: #ec1e79; 
+  transition: color .1s;
 }
 
 .menu__link:before {
@@ -41,7 +46,7 @@
   height: 18px;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 19px;
+  margin-right: 14px;
 }
 
 .header .menu__link {
@@ -49,7 +54,11 @@
 }
   
 .menu__item {
-  margin-right: 66px;
+  margin-right: 74px;
+}
+
+.menu__list--about {
+  margin-left: 120px;
 }
 
 .menu__text {

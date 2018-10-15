@@ -62,6 +62,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color .5s;
 }
 
 .prices__item__layer:hover {

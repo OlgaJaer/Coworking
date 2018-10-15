@@ -7,21 +7,17 @@
   display: block;
 }
 
-
-
-.contacts__schedule button {
-  background: #27273e;
-  border: #27273e;
+.contacts__schedule-button {
   color: #ec1e79;
   font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: underline;
   font-size: 14px;
   font-weight: 700;
   opacity: 0.7;
- text-align: right;
+  transition: color .1s;
 }
 
-button:hover {
+.contacts__schedule-button:hover {
   color: #5dd1f8;
 }
 
@@ -60,7 +56,6 @@ button:hover {
   list-style: none;
   margin: 0;
   padding: 18px 11px;
-
 }
 
 .contacts__schedule__list-item span {

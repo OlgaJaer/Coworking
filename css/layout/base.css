@@ -11,10 +11,20 @@ body {
 }
 
 .wrapper {
+  overflow: hidden;
   min-width: 1200px;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+}
+ 
+.wrapper-in {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(/images/intro.jpg) center center / cover no-repeat;
 }
 
 .wrapper__content {
@@ -25,4 +35,3 @@ body {
   width: 1160px;
   margin: 0 auto;
 }
-

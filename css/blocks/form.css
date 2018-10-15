@@ -1,29 +1,22 @@
-.form-block {
-
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.container-form {
+  width: 768px;
 }
 
 .form {
-  width: 100%;
+  padding: 51px 99px;
   background-color: #f5f5f5;
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  padding: 50px 93px;
+  box-sizing: border-box;
+  width: 100%;
   color: #221f1f;
   font-family: "GothamPro";
   font-size: 14px;
   font-weight: 300;
   margin-top: 57px;
-  margin-bottom: 50px;
-  margin-right: 20px;
+  margin-bottom: 28px;
 }
 
 .form__headline {
-  padding-bottom: 27px;
+  padding-bottom: 22px;
   padding-top: 8px;
 }
 
@@ -34,118 +27,125 @@
   margin: 0;
 }
 
-label,
-button {
-  display: block;
-}
-
-.form__content {
-  width: 562px;
-}
-
-.form__contacts {
-  width: 100%;
+.form__block {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
-#name,
-#link {
-  width: 269px;
-  height: 45px;
+.form__input {
+  flex: 1;
+  margin-right: 22px;
 }
 
-.form__comments {
+.form__input:last-child {
+  margin-right: 0;
+}
+
+.form__input-elem {
+  box-sizing: border-box;
   width: 100%;
-  margin-top: 20px;
-  margin-bottom: 5px;
+  border: none;
+  border-radius: 3px;
+  padding: 14px 9px;
+  border: 1px solid transparent;
 }
 
-#comment {
-  width: 100%;
+.form__input-elem:focus {
+  border-color:  #ec1e79;
+  outline: none;
+}
+
+.form__input-elem--textarea {
+  resize: vertical;
+  padding: 10px;
   min-height: 90px;
-  resize: none;
-  border: 1px solid #ffffff;
 }
 
-input#link:focus, input#name:focus,
-textarea#comment:focus {
-  border: 1px solid #ec1e79;
-}
-
-.form__feed {
+.form__buttons {
   display: flex;
   justify-content: space-between;
 }
 
-.form__feed__avatar {
-  display: flex;
-  flex-flow: row wrap;
+.form__check {
+  user-select: none;
 }
 
-.form__feed__avatar:nth-child(1) {
-  flex-basis: 100%;
+.form__input-title {
+  margin-bottom: 2px;
 }
 
-label[for="radio-no"], label[for="radio-yes"]
-{
-  display: flex;
+.form__photo-title {
+  color: #221f1f;
+  font-family: "GothamPro";
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
-/*
-.form__feed__submit {
-  width: 32%;
-  height: 45px;
-}*/
 
-.form__feed__button {
+.form__radio {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
+.form__radio-real {
+  display: none;
+}
+
+.form__radio-visible {
+  display: block;
+  border: 1px solid #c9c9c9;
+  background-color: #ffffff;
+  background-image: linear-gradient(to top, #ededed 0%, #ffffff 100%);
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.form__radio-real:checked ~ .form__radio-visible:before {
+  opacity: 1;
+}
+
+.form__radio-real:checked ~ .form__radio-text {
+  color: #ec1e79;
+}
+
+.form__radio-visible:before {
+content: "";
+display: block;
+width: 18px;
+height: 18px;
+background: url(../../images/Ellipse_3.png) center center no-repeat;
+  border: 1px solid #ec1e79;
+border-radius: 50%;
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+opacity: 0;
+}
+
+
+.form__button__submit {
   text-decoration: none;
   width: 100%;
   height: 100%;
   color: #ffffff;
   font-size: 12px;
   font-weight: 700;
-  padding: 10px 15px;
+  padding: 18px 21px;
   text-transform: uppercase;
   letter-spacing: 2.4px;
-   background-color: #27273e;
-  border-radius: 2px solid #27273e;
+  background-color: #27273e;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  transition: .2s;
 }
 
-.form__feed__button:hover {
+.form__button__submit:hover {
   background-color: #ec1e79;
-  border-radius: 2px solid #ec1e79;
+  
 }
 
-input[type="radio"] {
-  display: none;
-}
-
-input[type="radio"]+label:after {
-  color: #221f1f;
-  font-family: "GothamPro";
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 54px;
-}
-
-input[type="radio"]+label span {
-  display: block;
-  border: 1px solid #c9c9c9;
-  background-color: #ffffff;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-input[type="radio"]:checked+label {
-  color: #ec1e79;
-}
-
-input[type="radio"]:checked+label span {
-  background: url(../../images/Ellipse_3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  text-align: center;
-  border: 1px solid #ec1e79;
-}
