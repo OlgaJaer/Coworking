@@ -78,5 +78,5 @@
 .networks__item:hover {
   background-color: #ec1e79;
   border-radius: 50%;
-  transition: background-color .2s;
+  transition: background-color .5s;
 }

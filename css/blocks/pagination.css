@@ -47,7 +47,7 @@ padding-left: 205px;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .2s;
+  transition: .5s;
 }
 
 .comments .pagination__list__item {
