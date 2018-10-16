@@ -37,7 +37,8 @@ margin-right: 15px;
   font-weight: 700;
   margin-right: 19px;
   color: #ec1e79; 
-  transition: color .1s;
+  transition: color .5s;
+  position: relative;
 }
 
 .menu__link:before {
@@ -47,7 +48,20 @@ margin-right: 15px;
   display: inline-block;
   vertical-align: middle;
   margin-right: 14px;
+  position: relative;
 }
+
+.menu__link:after{
+  content: "";
+  width: 20px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  margin-left: -114px;
+  margin-bottom: -3.3px;
+}
+
 
 .header .menu__link {
   color: #ffffff;
@@ -71,21 +85,46 @@ margin-right: 15px;
  background-position: -69px -52px;
 }
 
-.menu__link__main-active:before {
+
+
+.menu__link__main:after {
+  background: url(../../images/spritesheet.png) center center no-repeat;
+  background-position: -42px -52px;
+  opacity: 0;
+ }
+
+
+ .menu__link__main:hover:before {
+  background: url(../../images/spritesheet.png) center center no-repeat;
+  background-position: -69px -52px;
+  opacity: 0;
+ }
+
+ .menu__link__main:hover:after {
+  background: url(../../images/spritesheet.png) center center no-repeat;
+  background-position: -42px -52px;
+  opacity: 1;
+  transition: .5s;
+ }
+
+ .menu__link__main-active:before {
   background: url(../../images/spritesheet.png) center center no-repeat;
   background-position: -42px -52px;
 }
+
+
+/*
 
 .menu__link__main:hover:before {
   background: url(../../images/spritesheet.png) center center no-repeat;
   background-position: -42px -52px;
 }
 
-.menu__link__main-active:hover:before {  /* */
+.menu__link__main-active:hover:before {  
   background-image: url(../../images/spritesheet.png);
   background-position: -69px -52px;
 }
-
+*/
 .menu__link__feedback-active, .menu__link__tariff-active, .menu__link__main-active  {
   color: #000; 
 }
@@ -102,15 +141,35 @@ margin-right: 15px;
   background-position: -39px -5px;
 }
 
-.menu__link__tariff:before {
+.menu__link__feedback:after {
   background-image: url(../../images/spritesheet.png);
-  background-position: -27px -86px;
+  background-position: -69px -5px;
+bottom: -2.5px;
+  left: 113.3px;
+  opacity: 0;
 }
+
+.menu__link__feedback:hover:before {
+  opacity: 0;
+}
+
+.menu__link__feedback:hover:after {
+  opacity: 1;
+  transition: .5s;
+}
+/*
 
 .menu__link__feedback:hover:before {
   background-image: url(../../images/spritesheet.png);
   background-position: -69px -5px;
 }
+*/
+
+.menu__link__tariff:before {
+  background-image: url(../../images/spritesheet.png);
+  background-position: -27px -86px;
+}
+
 
 .menu__link__tariff:hover:before {
   background-image: url(../../images/spritesheet.png);
