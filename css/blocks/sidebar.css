@@ -85,19 +85,18 @@ margin-right: 15px;
  background-position: -69px -52px;
 }
 
-
-
 .menu__link__main:after {
   background: url(../../images/spritesheet.png) center center no-repeat;
   background-position: -42px -52px;
   opacity: 0;
+  top: -4px;
  }
-
 
  .menu__link__main:hover:before {
   background: url(../../images/spritesheet.png) center center no-repeat;
   background-position: -69px -52px;
   opacity: 0;
+  transition: .5s;
  }
 
  .menu__link__main:hover:after {
@@ -106,16 +105,8 @@ margin-right: 15px;
   opacity: 1;
   transition: .5s;
  }
-
- .menu__link__main-active:before {
-  background: url(../../images/spritesheet.png) center center no-repeat;
-  background-position: -42px -52px;
-}
-
-
 /*
-
-.menu__link__main:hover:before {
+ .menu__link__main-active:before {
   background: url(../../images/spritesheet.png) center center no-repeat;
   background-position: -42px -52px;
 }
@@ -124,7 +115,21 @@ margin-right: 15px;
   background-image: url(../../images/spritesheet.png);
   background-position: -69px -52px;
 }
+/*
+.menu__link__main-active:hover:before {
+opacity: 0;
+transition: .5s;
+}
 */
+
+.menu__link__main-active:hover::before {
+  opacity: 1;
+}
+
+.menu__link__main-active:hover:after {
+  opacity: 0;
+}
+
 .menu__link__feedback-active, .menu__link__tariff-active, .menu__link__main-active  {
   color: #000; 
 }
@@ -147,10 +152,12 @@ margin-right: 15px;
 bottom: -2.5px;
   left: 113.3px;
   opacity: 0;
+  top: -4px;
 }
 
 .menu__link__feedback:hover:before {
   opacity: 0;
+  transition: .5s;
 }
 
 .menu__link__feedback:hover:after {
@@ -171,19 +178,46 @@ bottom: -2.5px;
 }
 
 
-.menu__link__tariff:hover:before {
+.menu__link__tariff:after {
   background-image: url(../../images/spritesheet.png);
   background-position: -56px -86px;
+top: -4px;
+left: 114px;
+opacity: 0;
 }
+
+.menu__link__tariff:hover:before {
+  opacity: 0;
+  transition: .5s;
+}
+
+.menu__link__tariff:hover:after {
+  opacity: 1;
+  transition: .5s;
+}
+
+
+
 
 .menu__link__feedback-active:before {
   background-image: url(../../images/spritesheet.png);
   background-position: -69px -5px;
 }
 
-.menu__link__feedback-active:hover:before {
+.menu__link__feedback-active:after {
   background-image: url(../../images/spritesheet.png);
   background-position: -39px -5px;
+  opacity: 0;
+}
+
+.menu__link__feedback-active:hover:before {
+opacity: 0;
+transition: .5s;
+}
+
+.menu__link__feedback-active:hover:after {
+  opacity: 1;
+  transition: .5s;
 }
 
 .menu__link__tariff-active:before {
@@ -191,10 +225,22 @@ bottom: -2.5px;
   background-position: -56px -86px;
 }
 
-.menu__link__tariff-active:hover:before {
+.menu__link__tariff-active:after {
   background-image: url(../../images/spritesheet.png);
   background-position: -27px -86px;
+  opacity: 0;
 }
+
+.menu__link__tariff-active:hover:before {
+  opacity: 0;
+  transition: .5s;
+}
+
+.menu__link__tariff-active:hover:after {
+  opacity: 1;
+  transition: .5s;
+}
+
 
 .menu__link__main-active:hover, .menu__link__feedback-active:hover, .menu__link__tariff-active:hover  {
   color: #ec1e79;
@@ -209,9 +255,42 @@ bottom: -2.5px;
     background: url(../../images/feed_icon_white.png)center center no-repeat;
   }
 
+  .header .menu__link__feedback:after {
+    background: url(../../images/spritesheet.png);
+    background-position: -39px -5px;
+  }
+
+  .header .menu__link__feedback:hover:before {
+    opacity: 0;
+    transition: .5s;
+  }
+
+  .header .menu__link__feedback:hover:after {
+    opacity: 1;
+    transition: .5s;
+  }
+
+
   .header .menu__link__tariff:before {
     background: url(../../images/wallet_icon_white.png) center center no-repeat;
   }
+
+ .header .menu__link__tariff:after {
+  background: url(../../images/spritesheet.png);
+  background-position: -27px -86px;
+}
+
+.header .menu__link__tariff:hover:before {
+  opacity: 0;
+  transition: .5s;
+}
+
+.header .menu__link__tariff:hover:after {
+  opacity: 1;
+  transition: .5s;
+}
+
+
  .header .menu__link__main-active {
   color: #ec1e79;
  }
@@ -220,11 +299,5 @@ bottom: -2.5px;
   color: #ec1e79;
  }
 
- .header .menu__link__feedback:hover:before {
-   background: url(../../images/spritesheet.png);
-   background-position: -39px -5px;
- }
- .header .menu__link__tariff:hover:before {
-   background: url(../../images/spritesheet.png);
-   background-position: -27px -86px;
- }
+ 
+ 
